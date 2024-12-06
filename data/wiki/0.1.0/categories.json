@@ -1,53 +1,10 @@
 {
   "categories": [
     {
-      "name": "Requirements",
+      "name": "Getting Started",
       "subcategories": [
-        "Requirements",
-        "Optional Requirements"
-      ]
-    },
-    {
-      "name": "Installation",
-      "subcategories": [
-        "Installation"
-      ]
-    },
-    {
-      "name": "Interface",
-      "subcategories": [
-        "Quick Access",
-        "Optimzation",
-        "Custom Model",
-        "MMD Options",
-        "Other Options",
-        "Visemes",
-        "Bones Parenting",
-        "Immersive Scaler",
-        "Eye Tracking",
-        "Settings"
-      ]
-    },
-    {
-      "name": "Common Issues",
-      "subcategories": [
-        "Missing Features",
-        "Material Combiner",
-        "Other Issues"
-      ]
-    },
-    {
-      "name": "Other Resources",
-      "subcategories": [
-        "Resources"
-      ]
-    },
-    {
-      "name": "Version Support",
-      "subcategories": [
-        "Latest Versions",
-        "End of Life",
-        "Support Policies"
+        "Installation",
+        "Basic Setup"
       ]
     }
   ]
