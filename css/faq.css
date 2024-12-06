@@ -31,6 +31,17 @@
     box-sizing: border-box;
 }
 
+.wiki-content ol {
+    counter-reset: item;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.wiki-content ol li {
+    display: list-item;
+    margin-bottom: 10px;
+}
+
 .wiki-nav a {
     display: block;
     padding: 0.8rem;
