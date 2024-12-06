@@ -1,70 +1,36 @@
 {
     "faqs": [
         {
-            "id": 1,
+            "id": 3,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Quick Access Panel?",
             "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of three main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/quick-access/armature-selection.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/quick-access/pose-controls.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/quick-access/import-export.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports FBX format)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status and current Blender mode (Object or Pose mode).[/note]",
             "keywords": ["interface", "quick access", "panel", "armature", "pose", "import", "export", "controls"],
             "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
+            "lastUpdated": "2024-12-06",
             "history": [
                 {
                     "version": "0.1.0",
-                    "date": "2024-01-20",
+                    "date": "2024-12-06",
                     "changes": "Initial documentation of Quick Access Panel interface"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "category": "Getting Started",
-            "subcategory": "Interface Overview", 
-            "question": "What is the Optimization Panel?",
-            "answer": "The Optimization Panel provides essential tools for optimizing your avatar's materials and meshes. Let's explore each section:\n\n### Materials Optimization\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-materials.png[/image]\nThe Materials section contains:\n- **Combine Materials**: Efficiently merges similar materials to reduce draw calls\n\n### Mesh Cleanup\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-cleanup.png[/image]\nTools for mesh optimization:\n- **Remove Doubles**: Quick vertex merging with default settings\n- **Advanced Remove Doubles**: Opens settings panel for precise vertex merging control\n\n### Join Meshes\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-join.png[/image]\nMesh combination tools:\n- **Join All Meshes**: Combines all avatar meshes into one\n- **Join Selected Meshes**: Merges only selected mesh objects\n\n[note]All optimization tools require a valid armature to be selected in the Quick Access Panel.[/note]",
-            "keywords": ["interface", "optimization", "panel", "materials", "mesh", "cleanup", "join meshes"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
-            "history": [
-                {
-                    "version": "0.1.0",
-                    "date": "2024-01-20",
-                    "changes": "Initial documentation of Optimization Panel interface"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "category": "Getting Started",
-            "subcategory": "Interface Overview",
-            "question": "What is the Tools Panel?",
-            "answer": "The Tools Panel offers a comprehensive set of utilities for avatar customization and optimization. Here's a breakdown of each section:\n\n### General Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-general.png[/image]\nBasic utilities:\n- **Convert to Resonite**: Export your avatar in Resonite-compatible format\n\n### Separation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-separation.png[/image]\nMesh separation utilities:\n- **Separate by Materials**: Split mesh based on material assignments\n- **Separate Loose Parts**: Split disconnected mesh components\n\n### Bone Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-bone.png[/image]\nArmature manipulation:\n- **Create Digitigrade**: Convert standard legs to digitigrade setup\n- **Weight Tools**: Clean up weight painting and bone constraints\n- **Merge Twist Bones**: Option to combine twist bone weights\n\n### Merge Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-merge.png[/image]\nBone merging options:\n- **Merge to Active**: Combine selected bones into active bone\n- **Merge to Parent**: Merge bones with their parents\n- **Connect Bones**: Create connections between bones\n\n### Additional Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-additional.png[/image]\nExtra utilities:\n- **Apply Transforms**: Apply object transformations\n- **Clean Shape Keys**: Remove unused shape keys\n\n[note]Many tools require a valid armature selection and specific Blender modes (Edit, Pose, or Object mode).[/note]",
-            "keywords": ["interface", "tools", "panel", "bones", "weights", "separation", "merge", "digitigrade", "shape keys"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
-            "history": [
-                {
-                    "version": "0.1.0",
-                    "date": "2024-01-20",
-                    "changes": "Initial documentation of Tools Panel interface"
                 }
             ]
         },
         {
             "id": 4,
             "category": "Getting Started",
-            "subcategory": "Interface Overview",
-            "question": "What is the MMD Panel?",
-            "answer": "The MMD Panel contains specialized tools for working with MMD models. Here's what each section offers:\n\n### Basic MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-basic.png[/image]\nEssential MMD utilities:\n- **Fix Bone Names**: Correct MMD bone naming conventions\n- **Fix Bone Hierarchy**: Adjust bone relationships\n- **Fix Bone Weights**: Optimize weight assignments\n\n### Advanced MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-advanced.png[/image]\nAdvanced features:\n- **Fix MMD Features**: Repair MMD-specific components\n- **Advanced Bone Operations**: Complex bone modifications\n\n### MMD Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-settings.png[/image]\nCustomization options:\n- Keep Upper Chest\n- Remove Unused Bones\n- Cleanup Shape Keys\n\n[note]These tools are specifically designed for MMD model optimization and conversion.[/note]",
-            "keywords": ["interface", "mmd", "panel", "bones", "weights", "cleanup"],
+            "subcategory": "Interface Overview", 
+            "question": "What is the Optimization Panel?",
+            "answer": "The Optimization Panel provides essential tools for optimizing your avatar's materials and meshes. Let's explore each section:\n\n### Materials Optimization\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-materials.png[/image]\nThe Materials section contains:\n- **Combine Materials**: Efficiently merges similar materials to reduce draw calls\n\n### Mesh Cleanup\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-cleanup.png[/image]\nTools for mesh optimization:\n- **Remove Doubles**: Quick vertex merging with default settings\n- **Advanced Remove Doubles**: Opens settings panel for precise vertex merging control\n\n### Join Meshes\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/optimization-join.png[/image]\nMesh combination tools:\n- **Join All Meshes**: Combines all avatar meshes into one\n- **Join Selected Meshes**: Merges only selected mesh objects\n\n[note]All optimization tools require a valid armature to be selected in the Quick Access Panel.[/note]",
+            "keywords": ["interface", "optimization", "panel", "materials", "mesh", "cleanup", "join meshes"],
             "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
+            "lastUpdated": "2024-12-06",
             "history": [
                 {
                     "version": "0.1.0",
-                    "date": "2024-01-20",
-                    "changes": "Initial documentation of MMD Panel interface"
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Optimization Panel interface"
                 }
             ]
         },
@@ -72,16 +38,16 @@
             "id": 5,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
-            "question": "What is the Settings Panel?",
-            "answer": "The Settings Panel allows you to customize Avatar Toolkit's behavior and preferences:\n\n### Language Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-language.png[/image]\nChoose your preferred interface language from the available options.\n\n### Validation Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-validation.png[/image]\nConfigure armature validation rules:\n- Strict Mode: Full validation\n- Basic Mode: Essential checks only\n- None: Disable validation\n\n### Debug Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-debug.png[/image]\nDeveloper options:\n- Enable Logging: Toggle detailed operation logs\n\n[note]Some settings changes may require a Blender restart to take effect.[/note]",
-            "keywords": ["interface", "settings", "panel", "language", "validation", "debug"],
+            "question": "What is the Tools Panel?",
+            "answer": "The Tools Panel offers a comprehensive set of utilities for avatar customization and optimization. Here's a breakdown of each section:\n\n### General Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-general.png[/image]\nBasic utilities:\n- **Convert to Resonite**: Export your avatar in Resonite-compatible format\n\n### Separation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-separation.png[/image]\nMesh separation utilities:\n- **Separate by Materials**: Split mesh based on material assignments\n- **Separate Loose Parts**: Split disconnected mesh components\n\n### Bone Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-bone.png[/image]\nArmature manipulation:\n- **Create Digitigrade**: Convert standard legs to digitigrade setup\n- **Weight Tools**: Clean up weight painting and bone constraints\n- **Merge Twist Bones**: Option to combine twist bone weights\n\n### Merge Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-merge.png[/image]\nBone merging options:\n- **Merge to Active**: Combine selected bones into active bone\n- **Merge to Parent**: Merge bones with their parents\n- **Connect Bones**: Create connections between bones\n\n### Additional Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/tools-additional.png[/image]\nExtra utilities:\n- **Apply Transforms**: Apply object transformations\n- **Clean Shape Keys**: Remove unused shape keys\n\n[note]Many tools require a valid armature selection and specific Blender modes (Edit, Pose, or Object mode).[/note]",
+            "keywords": ["interface", "tools", "panel", "bones", "weights", "separation", "merge", "digitigrade", "shape keys"],
             "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
+            "lastUpdated": "2024-12-06",
             "history": [
                 {
                     "version": "0.1.0",
-                    "date": "2024-01-20",
-                    "changes": "Initial documentation of Settings Panel interface"
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Tools Panel interface"
                 }
             ]
         },
@@ -89,15 +55,49 @@
             "id": 6,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
+            "question": "What is the MMD Panel?",
+            "answer": "The MMD Panel contains specialized tools for working with MMD models. Here's what each section offers:\n\n### Basic MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-basic.png[/image]\nEssential MMD utilities:\n- **Fix Bone Names**: Correct MMD bone naming conventions\n- **Fix Bone Hierarchy**: Adjust bone relationships\n- **Fix Bone Weights**: Optimize weight assignments\n\n### Advanced MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-advanced.png[/image]\nAdvanced features:\n- **Fix MMD Features**: Repair MMD-specific components\n- **Advanced Bone Operations**: Complex bone modifications\n\n### MMD Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-settings.png[/image]\nCustomization options:\n- Keep Upper Chest\n- Remove Unused Bones\n- Cleanup Shape Keys\n\n[note]These tools are specifically designed for MMD model optimization and conversion.[/note]",
+            "keywords": ["interface", "mmd", "panel", "bones", "weights", "cleanup"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of MMD Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Settings Panel?",
+            "answer": "The Settings Panel allows you to customize Avatar Toolkit's behavior and preferences:\n\n### Language Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-language.png[/image]\nChoose your preferred interface language from the available options.\n\n### Validation Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-validation.png[/image]\nConfigure armature validation rules:\n- Strict Mode: Full validation\n- Basic Mode: Essential checks only\n- None: Disable validation\n\n### Debug Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/settings-debug.png[/image]\nDeveloper options:\n- Enable Logging: Toggle detailed operation logs\n\n[note]Some settings changes may require a Blender restart to take effect.[/note]",
+            "keywords": ["interface", "settings", "panel", "language", "validation", "debug"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Settings Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
             "question": "What is the Updater Panel?",
             "answer": "The Updater Panel helps you keep Avatar Toolkit up to date:\n\n### Update Check\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/updater-check.png[/image]\nCheck for and install new versions:\n- Check for Updates button\n- Update to Latest Version option\n\n### Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/updater-version.png[/image]\nManage versions:\n- Select specific versions\n- View current version\n- Install selected version\n\n[info]Avatar Toolkit automatically checks for updates daily when enabled.[/info]\n\n[note]Blender restart is required after updates to apply changes.[/note]",
             "keywords": ["interface", "updater", "panel", "version", "update"],
             "version": "0.1.0",
-            "lastUpdated": "2024-01-20",
+            "lastUpdated": "2024-12-06",
             "history": [
                 {
                     "version": "0.1.0",
-                    "date": "2024-01-20",
+                    "date": "2024-12-06",
                     "changes": "Initial documentation of Updater Panel interface"
                 }
             ]
