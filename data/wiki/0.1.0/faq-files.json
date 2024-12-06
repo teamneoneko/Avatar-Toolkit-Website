@@ -2,7 +2,7 @@
     "faqFiles": [
         "requirements",
         "installation",
-        "basic-setup"
+        "basic-setup",
         "interface"
     ]
 }
