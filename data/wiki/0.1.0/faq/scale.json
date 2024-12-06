@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 13,
+            "category": "Interface",
+            "subcategory": "Immersive Scaler",
+            "question": "How do I use the Scaling Panel?",
+            "answer": "### Scaling Panel Overview\nThe Scaling Panel integrates the Immersive Scaler plugin, providing precise model scaling tools for VR platforms.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/scaling1.png[/image]\n\n### Key Features\n**Model Scaling**\n- Accurate height measurement tools\n- Real-world size references\n- VR-optimized scaling presets\n- Platform-specific scaling guides\n\n**Measurement Tools**\n- Height markers\n- Scale reference objects\n- Unit conversion utilities\n- Custom measurement points\n\n**Platform Support**\n- VRChat height guidelines\n- ChilloutVR size standards\n- Resonite scaling references\n- Universal VR measurements\n\n### Integration States\n**When Immersive Scaler is not installed:**\n- Shows installation instructions\n- Provides direct download link\n- Explains plugin benefits\n\n**When Immersive Scaler is disabled:**\n- Quick enable button\n- No restart required\n- Instant access after enabling\n\n[note]For detailed information about advanced scaling features and usage, visit the [link]https://github.com/triazo/immersive_scaler|Immersive Scaler repository[/link].[/note]\n\n[warning]The Scaling Panel requires Immersive Scaler plugin version 0.5.2 or higher (Must use Blender 4.2+ version).[/warning]",
+            "keywords": ["scaling", "immersive scaler", "height", "measurement", "VR", "size", "reference", "scale"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Scaling Panel documentation"
+                }
+            ]
+        }
+    ]
+}

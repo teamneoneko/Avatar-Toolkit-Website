@@ -1,0 +1,72 @@
+{
+    "faqs": [
+        {
+            "id": 17,
+            "category": "Common Issues",
+            "subcategory": "Material Combiner",
+            "question": "Why do my materials turn black/white when using the Fix Materials function?",
+            "answer": "This typically occurs when materials don't have assigned textures. The Fix Materials function assigns a white color by default to materials without textures.\n\n### Troubleshooting Steps\n- Verify you're using the recommended Blender version\n- Ensure CATS is up to date\n- Check that all materials have assigned textures\n\n**VRM Users**\nYou can try downgrading to VRM Addon version 2.15.26:\n[link]https://github.com/saturday06/VRM-Addon-for-Blender/releases/tag/v2.15.26|Download VRM 2.15.26[/link]\n\n[note]If you need more information or have issues with Material Combiner, it is a 3rd party plugin and has nothing to do with Cats, please check their Github: [link]https://github.com/Grim-es/material-combiner-addon|Material Combiner Repository[/link][/note]",
+            "keywords": ["material combiner", "textures", "fix materials", "black", "white", "VRM"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Material Combiner documentation"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "category": "Common Issues",
+            "subcategory": "Material Combiner",
+            "question": "After clicking \"Save atlas to..\" the materials are simply merged or the atlas image does not have all the textures",
+            "answer": "### Common Solutions\n1. Textures are packaged in a .blend file. Save the .blend file to a location of your choice, then go to File > External Data > Unpack Resources / Unpack All Into Files to extract the textures.\n\n2. Your version of Blender is not in English, in this case the nodes will be named differently, their names are strictly written in the script. You need to manually rename the nodes to their own names, or switch the blender version to English and regenerate the nodes by re-importing the model.\n\n3. You are using an unsupported shader (Surface property of material) or incorrect node names. You can check the file utils/materials.py to see which shaders are supported and what node names should be used.\n\n4. If objects already share the same material with the same texture, they will not be atlased because they are already optimized, and the existing image will be used instead.\n\n[note]If you need more information or have issues with Material Combiner, it is a 3rd party plugin and has nothing to do with Cats, please check their Github: [link]https://github.com/Grim-es/material-combiner-addon|Material Combiner Repository[/link][/note]",
+            "keywords": ["material combiner", "atlas", "textures", "merge", "nodes", "shader"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Material Combiner documentation"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "category": "Common Issues",
+            "subcategory": "Material Combiner",
+            "question": "Pillow installation process is repeated",
+            "answer": "Make sure the VPN is not currently active.\n\n### Windows Installation\nVerify that Blender is not installed from the Windows Store. To install Pillow manually:\n1. Navigate to your Blender installation folder, then to `folder with the blender version name\\python\\bin`\n2. Copy this path\n3. Press Win+R, type `cmd.exe`\n4. In the Windows console, enter:\n```\nset PythonPath=\"Your\\Copied\\Path\\To\\Python\\bin\\Folder\"\n%PythonPath%\\python.exe -m pip install Pillow --user --upgrade\n```\n\n### MacOS Installation\nExecute these commands in Terminal:\n```\n/Applications/Blender.app/Contents/MacOS/Blender -b --python-expr \"__import__('ensurepip')._bootstrap()\"\n/Applications/Blender.app/Contents/MacOS/Blender -b --python-expr \"__import__('pip._internal')._internal.main(['install', '-U', 'pip', 'setuptools', 'wheel'])\"\n/Applications/Blender.app/Contents/MacOS/Blender -b --python-expr \"__import__('pip._internal')._internal.main(['install', 'Pillow'])\"\n```\n\n[note]If you need more information or have issues with Material Combiner, it is a 3rd party plugin and has nothing to do with Cats, please check their Github: [link]https://github.com/Grim-es/material-combiner-addon|Material Combiner Repository[/link][/note]",
+            "keywords": ["material combiner", "pillow", "installation", "python", "pip"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Material Combiner documentation"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "category": "Common Issues",
+            "subcategory": "Material Combiner",
+            "question": "No module named 'material-combiner-addon-2'",
+            "answer": "You have installed the source code from the Releases. Instead, install from the master branch Material-combiner. Before doing so, remove the old installation folder.\n\n### Default Installation Locations\n\n**Windows**\n```\nC:\\Users\\YourUserName\\AppData\\Roaming\\Blender Foundation\\Blender\\BlenderVersion\\scripts\\addons\n```\n\n**MacOS**\n```\n/Users/YourUserName/Library/Application Support/Blender/BlenderVersion/scripts/addons\n```\n\nReplace YourUserName with your actual username and BlenderVersion with your Blender version.\n\n[note]If you need more information or have issues with Material Combiner, it is a 3rd party plugin and has nothing to do with Cats, please check their Github: [link]https://github.com/Grim-es/material-combiner-addon|Material Combiner Repository[/link][/note]",
+            "keywords": ["material combiner", "module", "installation", "addon", "path"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Material Combiner documentation"
+                }
+            ]
+        }
+    ]
+}

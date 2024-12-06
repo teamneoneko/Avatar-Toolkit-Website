@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home of Avatar Toolkit for Blender. an tool designed to shorten steps needed to import and optimize models into VRChat, Unity and other Engines.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Avatar Toolkit">
+    <meta property="og:description" content="Home of Avatar Toolkitfor Blender. an tool designed to shorten steps needed to import and optimize models into VRChat, Unity and other Engines.">
+    <meta property="og:image" content="https://neoneko.xyz/images/logo.jpg">
+    <meta property="og:url" content="https://neoneko.xyz">
+    <meta property="og:type" content="website">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/common.css" as="style">
+    <link rel="preload" href="css/index.css" as="style">
+    <link rel="preload" href="css/mobile.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+    
+    <title>Avatar Toolkit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="js/version-selector.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/theme-selector.js" defer></script>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="/" class="logo-link" aria-label="Avatar Toolkit Home">
+                <img src="https://neoneko.xyz/images/logo.jpg" alt="Neoneko Logo" class="logo-image" loading="lazy">
+                <div class="logo">Avatar Toolkit</div>
+            </a>
+            <ul class="menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li class="has-submenu" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Projects</a>
+                    <ul class="submenu" role="menu" aria-label="Projects">
+                        <li role="none"><a href="https://catsblenderplugin.xyz" role="menuitem">Cats Blender Plugin</a></li>
+                        <li role="none"><a href="https://avatartoolkit.xyz" role="menuitem">Avatar Toolkit</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Community</a>
+                    <ul class="submenu" role="menu" aria-label="Community">
+                        <li role="none"><a href="https://discord.neoneko.xyz/" role="menuitem"><i class="fab fa-discord"></i> Discord</a></li>
+                        <li role="none"><a href="https://bsky.app/profile/neoneko.xyz" role="menuitem"><i class="fa-brands fa-bluesky"></i> Bluesky</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">About</a>
+                    <ul class="submenu" role="menu" aria-label="About">
+                        <li role="none"><a href="https://neoneko.xyz/about.html" role="menuitem">About Us</a></li>
+                        <li role="none"><a href="https://neoneko.xyz/support-us.html" role="menuitem">Support Us</a></li>
+                        <li role="none"><a href="https://neoneko.xyz/contact.html" role="menuitem">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="wiki.html" role="menuitem">Wiki</a></li>
+            </ul>            
+            <div class="theme-hint">
+                <select id="theme-select" aria-label="Theme Selector" role="combobox">
+                    <option value="main-site" data-theme="main-site">Main Theme</option>
+                    <option value="light" data-theme="light">Light Theme</option>
+                    <option value="dark" data-theme="dark">Dark Theme</option>
+                    <option value="high-contrast" data-theme="high-contrast">High Contrast</option>
+                    <option value="forest" data-theme="forest">Forest Theme</option>
+                    <option value="mint" data-theme="mint">Mint Theme</option>
+                    <option value="cyberpunk" data-theme="cyberpunk">Cyberpunk Theme</option>
+                    <option value="halloween" data-theme="halloween">Halloween Theme</option>
+                </select>
+            </div>
+            <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="intro-container">
+            <span class="intro">Welcome to</span>
+            <h1 class="team-name">Avatar Toolkit</h1>
+            <div class="feature-box">
+                <div class="feature-content">
+                    <h2>A Modern Solution for Avatar Creation</h2>
+                    <p>Avatar Toolkit is a modern Blender addon designed to streamline the process of importing and optimizing 3D models for VRChat, Unity, and Source Engine. With built-in MMD support and advanced optimization features, it significantly reduces the steps needed to prepare your avatars.</p>
+                    <button id="official-selector" class="button">Download Now</button>
+                </div>
+            </div>
+            <p class="maintainer-info">This website is maintained by the <a href="https://neoneko.xyz">Neoneko Team</a>, the developers of Avatar Toolkit.</p>
+        </div>
+    
+
+        <button id="back-button" class="button" style="display: none;">Back</button>
+        
+        <div class="version-selector" style="display: none;">
+            <div class="selector">
+                <label for="blender-version-select">Select Blender Version:</label>
+                <select id="blender-version-select">
+                    <option value="">Choose your Blender version</option>
+                </select>
+            </div>
+
+            <div class="result-container">
+                <div class="info-box">
+                    <div class="version-info">
+                        <p><strong>Latest Version:</strong> <span id="latest-version">-</span></p>
+                        <p><strong>Development Status:</strong> <span id="development-status">-</span></p>
+                        <p><strong>Release Date:</strong> <span id="release-date">-</span></p>
+                        <p><strong>End of Life Date:</strong> <span id="eol-date">-</span></p>
+                    </div>
+                    <button id="download-button" class="primary-button">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            
+                <div class="content-wrapper">
+                    <div class="description-section">
+                        <h3>Read Me:</h3>
+                        <p id="version-description"></p>
+                    </div>
+                
+                    <div class="links-section">
+                        <div class="info-box">
+                            <h3>Links:</h3>
+                            <div class="button-container">
+                                <a id="github-link" href="#" target="_blank" class="info-button">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a id="archive-link" href="#" target="_blank" class="info-button">
+                                    <i class="fas fa-archive"></i> Archive
+                                </a>
+                            </div>
+                            
+                            <div class="support-links">
+                                <h3>Support:</h3>
+                                <div class="button-container">
+                                    <a id="wiki-link" href="#" target="_blank" class="info-button">
+                                        <i class="fas fa-book"></i> Wiki
+                                    </a>
+                                    <a id="discord-link" href="#" target="_blank" class="info-button">
+                                        <i class="fab fa-discord"></i> Discord
+                                    </a>
+                                </div>
+                                <div id="unsupported-message" class="unsupported-message" style="display: none;">
+                                    <p>This version is no longer supported. Please don't ask for help in either Discord.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>     
+    
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <ul class="footer-menu" role="menu">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="https://catsblenderplugin.xyz" role="menuitem">Cats Blender Plugin</a></li>
+                <li role="none"><a href="https://avatartoolkit.xyz" role="menuitem">Avatar Toolkit</a></li>
+                <li role="none"><a href="https://neoneko.xyz/about.html" role="menuitem">About Us</a></li>
+                <li role="none"><a href="https://neoneko.xyz/support-us.html" role="menuitem">Support Us</a></li>
+                <li role="none"><a href="https://neoneko.xyz/contact.html" role="menuitem">Contact Us</a></li>
+                <li role="none"><a href="wiki.html" role="menuitem">Wiki</a></li>
+            </ul>
+            <ul class="footer-menu" role="menu">
+                <li role="none"><a href="https://neoneko.xyz/privacy.html" role="menuitem">Privacy Policy</a></li>
+                <li role="none"><a href="https://neoneko.xyz/terms.html" role="menuitem">Terms of Service</a></li>
+            </ul>
+            <ul class="social-menu" role="menu">
+                <li role="none">
+                    <a href="https://discord.neoneko.xyz/" role="menuitem" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="https://bsky.app/profile/neoneko.xyz" role="menuitem" aria-label="Bluesky">
+                        <i class="fa-brands fa-bluesky"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-text">
+                Avatar Toolkit is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 License</a>.<br>
+                Blender is a registered trademark of the <a href="https://www.blender.org/about/foundation/">Blender Foundation</a>.<br>
+                Neoneko is not affiliated with the Blender Foundation.<br>
+                Copyright © 2024 <a href="https://neoneko.xyz">Neoneko</a>. All rights reserved.
+            </p>            
+        </div>
+    </footer>       
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 11,
+            "category": "Interface",
+            "subcategory": "Custom Model",
+            "question": "How do I use the Custom Model Creation Panel?",
+            "answer": "### Custom Model Creation Overview\nThis panel provides powerful tools for merging armatures and attaching meshes, with two main modes: Armature and Mesh.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/custom-model.png[/image]\n\n### Tutorial Access\nA helpful tutorial button is available at the top of the panel to guide you through the process.\n\n### Armature Mode\n**Main Settings**\n- Merge Same Bones: Automatically combines bones with matching names\n- Apply Transforms: Applies current transformations before merging\n- Join Meshes: Combines meshes after armature merging\n- Remove Zero Weight Bones: Cleans up unused bones\n- Cleanup Shape Keys: Optimizes shape keys during merge\n\n**Merge Selection**\n- Merge Into: Select the target armature\n- To Merge: Choose which armature to merge in\n- Attach to Bone: (Available when not merging same bones) Select connection point\n\n### Mesh Mode\n**Purpose**: Attach individual meshes to an existing armature\n\n**Settings**\n- Join Meshes: Option to combine meshes during attachment\n\n**Selection Options**\n- Merge Into: Choose target armature\n- Attach Mesh: Select mesh to attach\n- Attach to Bone: Pick the bone for attachment\n\n[note]You need at least two armatures for Armature mode, or one armature and one mesh for Mesh mode.[/note]\n\n### Common Use Cases\n- Combining multiple character models\n- Adding accessories to existing models\n- Merging partial models into complete ones\n- Attaching custom meshes to rigged characters\n\n[warning]Always create a backup of your models before performing merge operations.[/warning]",
+            "keywords": ["custom model", "merge armature", "attach mesh", "combine models", "rigging", "mesh attachment"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Custom Model Creation Panel documentation"
+                }
+            ]
+        }
+    ]
+}

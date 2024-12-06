@@ -1,0 +1,15 @@
+{
+  "version": "4.2",
+  "latestVersion": "4.2.1.4",
+  "releaseDate": "2024-10-24",
+  "eolDate": "Not Set",
+  "developmentStatus": "stable",
+  "archiveLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.2/",
+  "description": "<div class='highlight-warning'>Due to issue with Blender 4.2, we currently DO NOT recommend using Blender 4.2, if you encounter issues please use Blender 4.1 instead</div><br><div class='highlight-warning'>Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.</div><br><div class='highlight-info'>Blender 4.2 is the next Blender Long Term Support (LTS) release, and the unofficial Cats add-on fully supports this version with enhanced features and stability improvements.</div><br><div class='highlight-warning'>Important: The Official Cats add-on is not compatible with Blender 4.2 due to significant API changes. Using it may cause crashes or unexpected behavior.</div><br><div class='highlight-note'>For the best experience, please join our Discord community for support and check the wiki for detailed installation instructions and tutorials.</div>",
+  "unofficial": {
+    "githubLink": "https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/releases/tag/4.2.1.4",
+    "downloadLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.2/CatsBlenderPlugin4.2Latest.zip",
+    "wikiLink": "wiki.html",
+    "discordLink": "https://discord.catsblenderplugin.xyz/"
+  }
+}

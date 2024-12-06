@@ -1,0 +1,55 @@
+{
+    "faqs": [
+        {
+            "id": 8,
+            "category": "Interface",
+            "subcategory": "Optimzation",
+            "question": "How do I use the Atlas tab in the Optimization Panel?",
+            "answer": "### Atlas Tab Overview\nThe Atlas tab helps you combine multiple textures into a single texture atlas, reducing draw calls and improving avatar performance.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/optimzation1.png[/image]\n\n### Important Notes\n- For PBR/Normal maps, use Tuxedo Blender Plugin instead\n- Atlas creation can significantly reduce your avatar's resource usage\n- Helps stay within platform texture limits\n\n### Material Combiner Features\n**Combining Multiple Materials**\n- Mix diffuse colors with textures\n- Specify atlas size and individual texture sizes\n- Optimize texture layout automatically\n\n### How To Use Material Combiner\n   - Check/uncheck boxes to include/exclude materials\n   - Use Select All/Deselect All for quick selection\n5. Set size for materials without images (default: 32px)\n6. Click 'Save atlas to..' to start the process\n\n[note]If materials don't merge properly or textures are missing from the atlas, check the [link]https://github.com/Grim-es/material-combiner-addon/tree/master?tab=readme-ov-file#after-clicking-save-atlas-to-the-materials-are-simply-merged-or-the-atlas-image-does-not-have-all-the-textures|troubleshooting guide[/link].[/note]\n\n### Integration States\nThe Atlas tab shows different options based on SMC status:\n\n**When SMC is not installed:**\n- Shows clear installation steps\n- Provides direct download link to get SMC\n- Explains why SMC is needed for atlas creation\n\n**When SMC is disabled:**\n- Quick enable button to activate SMC\n- No restart required\n- Instant access to atlas tools after enabling\n\n**When SMC is outdated:**\n- Version compatibility information\n- Direct link to get the compatible version\n- Explains which features need updating\n\n**When SMC is properly installed:**\n- Full access to texture atlas creation\n- Material combining options\n- Advanced texture packing settings\n\nFor more detailed information about Material Combiner, visit their [link]https://github.com/Grim-es/material-combiner-addon|Github repository[/link].\n\n### Benefits of Using Atlas\n- Reduces draw calls significantly\n- Improves avatar performance\n- Helps meet platform limitations\n- Simplifies material management",
+            "keywords": ["atlas", "texture", "material combiner", "SMC", "textures", "optimization", "performance", "draw calls", "UV packing", "multicombining"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Atlas tab documentation"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "category": "Interface",
+            "subcategory": "Optimzation",
+            "question": "How do I use the Material tab in the Optimization Panel?",
+            "answer": "### Material Tab Overview\nThe Material tab offers powerful tools for optimizing materials and meshes, helping reduce resource usage and improve performance.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/optimzation2.png[/image]\n\n### Material Operations\n**Combine Materials**\n- Merges multiple materials into a single material\n- Reduces draw calls for better performance\n- Maintains texture assignments and UV maps\n- Ideal for objects that share similar materials\n\n**Convert All to PNG**\n- Converts all textures to PNG format\n- Ensures maximum compatibility across platforms\n- Maintains alpha channels\n- Helps prevent texture issues in-game\n\n### Mesh Operations\n**Join Meshes**\n- Join All: \n  - Combines all meshes into one object\n  - Maintains material assignments\n  - Preserves vertex groups and weights\n  - Ideal for final optimization\n\n- Join Selected: \n  - Merges only chosen meshes\n  - Perfect for partial optimization\n  - Keeps other meshes separate\n  - Useful for selective optimization\n\n### Cleanup Tools\n**Remove Doubles**\n- Eliminates duplicate vertices\n- Adjustable threshold for precise control\n- Reduces vertex count\n- Fixes common mesh issues\n- Improves performance\n\n### When to Use Each Feature\n- Use Combine Materials when you have many similar materials\n- Convert to PNG before platform upload\n- Join Meshes for final optimization\n- Remove Doubles when mesh has overlapping vertices\n\n[note]These operations are permanent. Save your work before using these tools. Consider keeping a backup of your original files.[/note]",
+            "keywords": ["material", "mesh", "combine", "join", "png", "cleanup", "optimization", "vertices", "draw calls"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Material tab documentation"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "category": "Interface",
+            "subcategory": "Optimzation",
+            "question": "How do I use the Bone Merging tab in the Optimization Panel?",
+            "answer": "### Bone Merging Tab Overview\nThe Bone Merging tab provides advanced tools for optimizing your avatar's armature and weight configurations, helping reduce bone count and improve performance.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/optimzation3.png[/image]\n\n### Main Settings\n**Merge Options**\n- Merge Mesh: \n  - Available with multiple meshes\n  - Combines meshes before bone operations\n  - Preserves weight assignments\n\n- Merge Bone: \n  - Controls which bones to merge\n  - Smart selection based on bone influence\n  - Preserves important bones\n\n- Merge Ratio: \n  - Sets the merging threshold\n  - Higher values merge more aggressively\n  - Lower values are more conservative\n\n### Primary Actions\n- Refresh Root: \n  - Updates root bone references\n  - Fixes hierarchy issues\n  - Ensures proper bone relations\n\n- Bone Merge: \n  - Executes the merging process\n  - Combines selected bones\n  - Redistributes weights\n\n### Weight Management\n**Merge Weights**\n- Merge All: \n  - Combines all weight groups\n  - Optimizes weight distribution\n  - Reduces overall weight count\n\n- Merge to Active: \n  - Transfers weights to active object\n  - Ideal for specific mesh optimization\n  - Maintains weight influence\n\n### Additional Options\n- Keep Merged Bones: \n  - Retains merged bones as backup\n  - Allows for reverting changes\n  - Useful for testing results\n\n- Merge Visible Meshes Only: \n  - Processes only visible objects\n  - Helps with selective optimization\n  - Maintains hidden backups\n\n### Cleanup Tools\n**Delete Operations**\n- Remove Zero Weight Bones: \n  - Deletes unused bones\n  - Reduces armature complexity\n  - Improves performance\n\n- Remove Constraints: \n  - Clears bone constraints\n  - Simplifies armature behavior\n  - Reduces computation needs\n\n- Remove Zero Weight Groups: \n  - Cleans empty weight groups\n  - Reduces file size\n  - Improves viewport performance\n\n- Keep Twist Bones Option: \n  - Preserves important animation bones\n  - Maintains smooth deformations\n  - Prevents animation issues\n\n### Extra Operations\n- Duplicate Bones: \n  - Creates bone copies\n  - Useful for custom rigging\n  - Maintains original structure\n\n- Connect Bones: \n  - Creates visual connections\n  - Improves armature readability\n  - Helps with animation setup\n\n### Best Practices\n1. Always start with a backup\n2. Test merge ratios on a copy first\n3. Check animations after merging\n4. Use cleanup tools last\n\n[warning]These operations significantly modify your armature structure. Always keep a backup of your original file before proceeding.[/warning]",
+            "keywords": ["bone", "merging", "weights", "armature", "cleanup", "optimization", "rigging", "vertex groups"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Bone Merging tab documentation"
+                }
+            ]
+        }
+    ]
+}

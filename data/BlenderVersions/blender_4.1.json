@@ -1,0 +1,15 @@
+{
+  "version": "4.1",
+  "latestVersion": "4.1.2.3",
+  "releaseDate": "2024-10-24",
+  "eolDate": "Once 4.2 is more stable",
+  "developmentStatus": "stable",
+  "archiveLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.1/",
+  "description": "<div class='highlight-info'>The unofficial Cats add-on for Blender 4.1 provides full compatibility and enhanced features for your avatar creation needs.</div><br><div class='highlight-warning'>Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.</div><br><div class='highlight-warning'>End of Life Notice: This version will reach end-of-life on once 4.2 is more stable. We recommend planning to upgrade to the Blender 4.2 version once we announce end of life.</div><br><div class='highlight-note'>Support is available through our Discord community, and comprehensive documentation can be found in our wiki.</div>",
+  "unofficial": {
+    "githubLink": "https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/releases/tag/4.1.2.3",
+    "downloadLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.1/CatsBlenderPlugin4.1Latest.zip",
+    "wikiLink": "wiki.html",
+    "discordLink": "https://discord.catsblenderplugin.xyz/"
+  }
+}

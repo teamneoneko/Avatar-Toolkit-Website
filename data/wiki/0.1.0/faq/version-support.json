@@ -1,0 +1,55 @@
+{
+    "faqs": [
+        {
+            "id": 3,
+            "category": "Version Support",
+            "subcategory": "Latest Versions",
+            "question": "What versions of Blender are currently supported?",
+            "answer": "### Current Supported Versions\n\n|Version|Policy|End Of Life Date/Notes|\n|---|---|---|\n|4.2 LTS|We currently fully support Blender 4.2 LTS, the current 4.2 dev branch may contain further fixes and updates. All blender 4.2 releases will be released under version number 4.2.x.x.|Currently set for 3 months after the first stable Avatar Toolkit comes out, this most likely won't be unto Blender 5.0|\n|4.3|Currently in Early Alpha for 4.3, the current 4.3 dev is the Alpha. All blender 4.3 releases will be released under version number 4.3.x.x.|Currently set for 1 months after the first stable Avatar Toolkit comes out, this most likely won't be unto Blender 5.0|",
+            "keywords": ["versions", "support", "current versions", "4.2", "4.3", "LTS"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial version support documentation"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "category": "Version Support",
+            "subcategory": "End of Life",
+            "question": "Which versions are no longer supported (End of Life)?",
+            "answer": "Do not report issues for these versions as they are no longer supported.\n\n|Version|Policy|\n|---|---|\n|3.6 LTS|Cats of Blender 3.6 is now End of Life, no support will be given. All 3.6 versions number will be under 3.6.x.x.|3.6.8.3|\n|4.1|Cats of Blender 4.1 is now End of Life, no support will be given. All 4.1 versions number will be under 4.1.x.x.|4.1.2.4|\n|4.0|No longer supported, the last version to support this version of blender was [link]https://github.com/Yusarina/Cats-Blender-Plugin-Unofficial-/releases/tag/4.0.5.2|4.0.5.2[/link]|\n|3.3, 3.4 and 3.5|No longer supported, the last version to support these versions of blender is [link]https://github.com/Yusarina/Cats-Blender-Plugin-Unofficial-/releases/tag/0.40.0|0.40.0[/link]|\n|3.2 and below|No longer supported, the last version to support these versions is [link]https://github.com/Yusarina/Cats-Blender-Plugin-Unofficial-/releases/tag/0.30.0|0.30.0[/link] however this may have issues on 2.8, please use the official version of cats for 2.8.|\n|2.79|Even the official cats has not worked on this version of Blender properly for a long time, we do not support this version, please use an older version of the official cats for this version of blender.|",
+            "keywords": ["versions", "end of life", "EOL", "legacy versions", "old versions"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial EOL documentation"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "category": "Version Support",
+            "subcategory": "Support Policies",
+            "question": "What are the version support policies?",
+            "answer": "When a new LTS comes out, we will make that LTS our main version, all older LTS's will be given a finale date of when we will support it too. For example if Blender 4.2 LTS comes out in June, we will give the 3.6 LTS about 6 month more support and updates so 3.6 would be supported unto November.\n\n[note]Please note dates and how long we support a LTS is not finale.[/note]",
+            "keywords": ["support policy", "LTS", "version policy"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial support policy documentation"
+                }
+            ]
+        }
+    ]
+}

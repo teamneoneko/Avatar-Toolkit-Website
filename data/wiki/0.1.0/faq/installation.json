@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 2,
+            "category": "Installation",
+            "subcategory": "Installation",
+            "question": "How do I install Cats Blender Plugin?",
+            "answer": "### Installing via Blender's Extension System\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/install1.png[/image]\n\n1. Open Blender 4.2 or above\n2. Go to Edit > Preferences\n3. Select the 'Add-ons' tab\n4. Click 'Install from Disk'\n5. Navigate to where you downloaded the Cats .zip file\n6. Select the file and click 'Install from Disk'\n\n[note]Make sure you don't extract the zip file - Blender's extension system needs the original zip file.[/note]\n\n### Enabling the Plugin\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/install2.png[/image]\n\n1. After installation Cat's should enable automatically if it doesn't, find 'Cats Blender Plugin' in the add-ons list\n   - You can use the search box to quickly find it by typing 'cats'\n2. Enable the plugin by checking the box next to its name\n3. The Cats menu will appear in the 3D Viewport's sidebar (press N to show/hide)\n\n### Verifying Installation\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/install3.png[/image]\n\nTo verify the installation:\n1. Open the 3D Viewport\n2. Press N to open the sidebar\n3. Look for the 'Cats' tab\n4. Click it to access all Cats tools",
+            "keywords": ["installation", "setup", "extension", "addon", "enable"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-20",
+                    "changes": "Initial installation guide for Blender 4.2+ extension system"
+                }
+            ]
+        }
+    ]
+}

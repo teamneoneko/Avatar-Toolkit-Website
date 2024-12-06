@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 15,
+            "category": "Interface",
+            "subcategory": "Bones Parenting",
+            "question": "How do I use the Bone Parenting Panel?",
+            "answer": "### Bone Parenting Panel Overview\nThe Bone Parenting Panel helps you manage and set up root bones for your armature, which is essential for proper model rigging and animation.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/boneparenting1.png[/image]\n\n### Root Bone Selection\n- Choose the main root bone from available bones\n- Displays current root bone selection\n- Shows all potential root bones in your armature\n\n### Main Actions\n**Refresh Root**\n- Updates the root bone list\n- Refreshes bone hierarchy\n- Ensures accurate bone relationships\n\n**Set Root**\n- Establishes selected bone as root\n- Reorganizes bone hierarchy\n- Sets up proper parenting\n\n### Use Cases\n1. Setting up new armatures\n2. Fixing hierarchy issues\n3. Preparing for animation\n4. Optimizing rig structure\n\n### Best Practices\n1. Choose a central bone as root\n2. Refresh after major armature changes\n3. Verify hierarchy after setting root\n4. Check animations after root changes\n\n[note]A properly set root bone is crucial for correct model behavior and animation.[/note]\n\n[warning]Changing the root bone will affect the entire armature hierarchy. Make sure to test your model's animations after making changes.[/warning]",
+            "keywords": ["bone root", "armature", "hierarchy", "rigging", "root bone", "bone structure"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Bone Parenting Panel documentation"
+                }
+            ]
+        }
+    ]
+}

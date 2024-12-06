@@ -1,0 +1,21 @@
+{
+    "faqFiles": [
+        "requirements",
+        "installation",
+        "interface",
+        "optimization",
+        "version-support",
+        "custom-model",
+        "mmd-options",
+        "other-options",
+        "visemes",
+        "bones-root",
+        "scale",
+        "eye-tracking",
+        "settings",
+        "missing-features",
+        "material-combiner",
+        "other-issues",
+        "resources"
+    ]
+}

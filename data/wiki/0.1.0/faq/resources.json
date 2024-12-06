@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 25,
+            "category": "Other Resources",
+            "subcategory": "Resources",
+            "question": "What official documentation and references are available?",
+            "answer": "[details]Official Documentation|• [link]https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-viseme-reference/|Official Oculus viseme reference[/link]\n - Complete reference guide for Oculus viseme implementation\n - Essential resource for understanding viseme configurations\n - Includes detailed specifications for lip sync animations[/details]",
+            "keywords": ["documentation", "resources", "oculus", "visemes", "reference", "lip sync"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial documentation resources entry"
+                }
+            ]
+        }
+    ]
+}

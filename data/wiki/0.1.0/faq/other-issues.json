@@ -1,0 +1,72 @@
+{
+    "faqs": [
+        {
+            "id": 21,
+            "category": "Common Issues",
+            "subcategory": "Other Issues",
+            "question": "Why does the Update Checker show incorrect version information?",
+            "answer": "### Common Update Checker Issues\n\n**Using Outdated Plugin:**\n- Blender 4.2: Should report version 4.2.x.x\n- Older versions reporting 0.50.0 or 3.6.4 need updating\n\n**Version Number Format:**\n- Current format: 4.2.x.x (e.g., 4.2.1.0)\n- Old format: 0.50.0, 3.6.4 (without final digit)\n\n**VPN Issues:**\n- Some VPN providers may interfere with the version checker\n\n[warning]If using versions before 3.6.4.1 or 4.2.2.1, update your plugin first. Issues reported for outdated versions will be closed unless verified as legitimate updater problems.[/warning]\n\n[note]If the updater suggests a version for a different Blender version, you likely have an old plugin version. Please manually update to the correct version for your Blender installation.[/note]",
+            "keywords": ["update", "version", "checker", "VPN", "outdated"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Other Issues documentation"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "category": "Common Issues",
+            "subcategory": "Other Issues",
+            "question": "Why can't I see Pose Mode?",
+            "answer": "### Pose Mode Requirements\n\n- You must have a model imported first\n- The model needs a valid armature\n\nPose Mode will only appear when these conditions are met, as it's specifically for posing armatures.",
+            "keywords": ["pose mode", "armature", "model", "requirements"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Other Issues documentation"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "category": "Common Issues",
+            "subcategory": "Other Issues",
+            "question": "Why doesn't the addon show up or gives errors after installation?",
+            "answer": "### Installation Requirements\n\n**Verify Version Compatibility:**\n- Use our [link]https://catsblenderplugin.xyz/|Version Selector[/link] to download the correct CATS version for your Blender\n- Each Blender version requires its specific CATS version\n\n**Required Steps:**\n- Restart Blender after installing CATS\n- This step is essential for all features to work correctly",
+            "keywords": ["installation", "errors", "compatibility", "restart", "version"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Other Issues documentation"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "category": "Common Issues",
+            "subcategory": "Other Issues",
+            "question": "What are these policy violation warnings in Blender 4.2+?",
+            "answer": "These warnings are expected and can be safely ignored:\n\n### Technical Background\n- Blender 4.2+ introduced new Extension system standards\n- CATS was developed before these standards existed\n- CATS uses legacy methods for loading 3rd party addons (like MMD Tools)\n\n[note]These warnings don't affect any CATS functionality - everything works as intended.[/note]\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wiki/Screenshot_from_2024-07-12_20-19-25.png[/image]\n\n### Why This Happens\nBlender 4.2+ has implemented stricter standards for addon development. While CATS remains fully functional, its method of loading third-party addons triggers these new policy warnings.",
+            "keywords": ["policy", "warnings", "Blender 4.2", "extensions", "standards"],
+            "version": "1.0",
+            "lastUpdated": "2024-01-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-01-30",
+                    "changes": "Initial Other Issues documentation"
+                }
+            ]
+        }
+    ]
+}

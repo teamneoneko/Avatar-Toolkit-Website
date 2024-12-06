@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 14,
+            "category": "Interface",
+            "subcategory": "Eye Tracking",
+            "question": "How do I use the Eye Tracking Panel?",
+            "answer": "### Eye Tracking Panel Overview\nThe Eye Tracking Panel offers tools for setting up eye movement and blinking on your avatars, with support for both SDK3 and Legacy modes.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/eyetracking1.png[/image]\n\n### Mode Selection\n**SDK3 Mode**\n- Simplified setup for VRChat SDK3\n- Automatic bone rotation configuration\n- Direct eye bone assignment\n\n**Legacy Mode**\n- Complete eye tracking setup\n- Customizable eye movement\n- Advanced blinking controls\n- Shape key integration\n\n### Eye Setup Controls\n**Bone Selection**\n- Head bone assignment\n- Left/Right eye bones\n- Automatic bone detection\n- Smart bone hierarchy handling\n\n**Shape Key Configuration**\n- Wink left/right setup\n- Lower lid controls\n- Blinking animations\n- Custom shape key mapping\n\n### Testing Mode Features\n**Eye Movement Testing**\n- Real-time rotation preview\n- X/Y axis controls\n- Distance adjustment\n- Reset position options\n\n**Blinking Controls**\n- Blink shape testing\n- Lower lid animation\n- Shape key verification\n- Animation preview\n\n### Additional Options\n- Disable eye blinking\n- Disable eye movement\n- Eye distance adjustment\n- Mesh selection for multi-mesh models\n\n[note]Test your eye tracking setup thoroughly in VR to ensure natural movement and comfortable viewing angles.[/note]\n\n[warning]For optimal results, ensure your model's eyes are properly weighted to their respective bones before setup.[/warning]",
+            "keywords": ["eye tracking", "blinking", "SDK3", "legacy", "bones", "shape keys", "animation", "eye movement", "wink", "testing"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Eye Tracking Panel documentation"
+                }
+            ]
+        }
+    ]
+}

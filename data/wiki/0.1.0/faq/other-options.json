@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 13,
+            "category": "Interface",
+            "subcategory": "Other Options",
+            "question": "How do I use the Other Options Panel?",
+            "answer": "### Other Options Overview\nThe Other Options panel provides additional tools for model customization and optimization.\n\n[image]https://cdn.neoneko.xyz/catsblenderplugin/website/wikicurrent/otheroptions1.png[/image]\n\n### Separate By Tools\n**Available Separation Methods:**\n- By Materials: Splits mesh based on material assignments\n- By Loose Parts: Separates unconnected mesh elements\n- By Shape Keys: Creates separate meshes from shape keys\n\n### Translation Tools\n**Translation Settings**\n- Google Translate Only: Toggle for translation service\n\n**Translation Options**\n- Translate All: Processes all translatable elements\n- Shape Keys: Translates shape key names\n- Objects: Converts object names\n- Bones: Translates bone names\n- Materials: Converts material names\n\n### More Options (Advanced)\n**Normals Management**\n- Recalculate Normals: Fixes normal direction issues\n- Flip Normals: Inverts normal directions\n\n**Transformations and Shape Keys**\n- Apply Transformations: Apply current transforms\n- Shape Key Tools:\n  - Shape Key Pruner: Remove unused shape keys\n  - Repair Shape Keys: Fix broken shape keys\n  - Optimize Static Shape Keys: Remove unnecessary data\n\n**Advanced Features**\n- Create Digitigrade Legs: Convert to digitigrade setup\n- Generate Twist Bones: Add twist bone system\n  - Upper Arm/Leg Option: Include upper limb twists\n\n**Additional Tools**\n- Fix VRM Shapes: Repair VRM shape key issues\n- Convert to Valve Format: Format conversion for Source engine\n\n[note]These tools provide advanced customization options. Each feature is designed for specific use cases and should be used accordingly.[/note]\n\n### Best Practices\n1. Use separation tools early in the workflow\n2. Translate names before other operations\n3. Handle normals before applying transforms\n4. Apply transforms before shape key operations\n5. Save backups before using advanced features\n\n[warning]Some operations like separation and transformation applications cannot be undone. Always work on a copy of your model.[/warning]",
+            "keywords": ["other options", "separate mesh", "translate", "normals", "shape keys", "transformations", "digitigrade", "twist bones", "VRM", "valve"],
+            "version": "1.0",
+            "lastUpdated": "2024-11-30",
+            "history": [
+                {
+                    "version": "1.0",
+                    "date": "2024-11-30",
+                    "changes": "Initial Other Options Panel documentation"
+                }
+            ]
+        }
+    ]
+}
