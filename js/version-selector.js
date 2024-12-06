@@ -48,12 +48,12 @@ class VersionSelector {
         this.select.parentNode.appendChild(loadingDiv);
 
         try {
-            const response = await fetch('https://raw.githubusercontent.com/unofficalcats/unofficalcatswebsite/main/data/BlenderVersions/versions.json');
+            const response = await fetch('https://raw.githubusercontent.com/teamneoneko/Avatar-Toolkit-Website/main/data/BlenderVersions/versions.json');
             const files = await response.json();
             files.sort().reverse();
 
             const promises = files.map(file => 
-                fetch(`https://raw.githubusercontent.com/unofficalcats/unofficalcatswebsite/main/data/BlenderVersions/${file}`)
+                fetch(`https://raw.githubusercontent.com/teamneoneko/Avatar-Toolkit-Website/main/data/BlenderVersions/${file}`)
                     .then(response => response.json())
             );
 
@@ -102,7 +102,7 @@ class VersionSelector {
         this.select.parentNode.appendChild(loadingDiv);
 
         try {
-            const response = await fetch(`https://raw.githubusercontent.com/unofficalcats/unofficalcatswebsite/main/data/BlenderVersions/${selectedFile}`);
+            const response = await fetch(`https://raw.githubusercontent.com/teamneoneko/Avatar-Toolkit-Website/main/data/BlenderVersions/${selectedFile}`);
             const data = await response.json();
 
             this.latestVersion.textContent = data.latestVersion || 'N/A';

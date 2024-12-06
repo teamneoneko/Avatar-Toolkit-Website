@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const versionSelect = document.getElementById('versionSelect');
     
     // Set initial version
-    versionSelect.value = 'current';
+    versionSelect.value = '0.1.0';
 
     // Global data storage
     let faqData = [];
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // GitHub URLs and version handling
-    const getBaseUrl = (version) => `https://raw.githubusercontent.com/teamneoneko/avatartoolkit/main/data/wiki/${version}`;
+    const getBaseUrl = (version) => `https://raw.githubusercontent.com/teamneoneko/Avatar-Toolkit-Website/main/data/wiki/${version}`;
 
-    // Update fetchFAQData to handle version-specific data
+    // Update fetchFAQData to properly use version folders
     async function fetchFAQData() {
-        const version = versionSelect.value;
+        const version = versionSelect.value; // Gets the selected version (e.g., "0.1.0")
         const baseUrl = getBaseUrl(version);
         const categoriesUrl = `${baseUrl}/categories.json`;
         const faqBaseUrl = `${baseUrl}/faq`;
@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(categoriesUrl),
                 fetch(`${baseUrl}/faq-files.json`)
             ]);
-    
+
             if (!categoriesResponse.ok || !faqFilesResponse.ok) {
                 throw new Error('Failed to fetch required data');
             }
-    
+
             const categoriesData = await categoriesResponse.json();
             const faqFiles = (await faqFilesResponse.json()).faqFiles;
-    
+
             // Fetch all FAQ files in parallel
             const faqPromises = faqFiles.map(filename => 
                 fetch(`${faqBaseUrl}/${filename}.json`)
@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         return { faqs: [] };
                     })
             );
-    
+
             const faqResults = await Promise.all(faqPromises);
             
             // Combine all FAQs into one array
             const combinedFaqs = faqResults.reduce((acc, result) => {
                 return acc.concat(result.faqs);
             }, []);
-    
+
             return {
                 faqData: combinedFaqs,
                 categoriesData: categoriesData.categories
