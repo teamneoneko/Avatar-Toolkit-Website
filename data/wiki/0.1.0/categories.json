@@ -3,6 +3,7 @@
     {
       "name": "Getting Started",
       "subcategories": [
+        "Requirements",
         "Installation",
         "Basic Setup",
         "Interface Overview"
