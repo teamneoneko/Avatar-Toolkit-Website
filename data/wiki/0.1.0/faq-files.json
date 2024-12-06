@@ -1,6 +1,8 @@
 {
     "faqFiles": [
+        "requirements",
         "installation",
+        "basic-setup"
         "interface"
     ]
 }
