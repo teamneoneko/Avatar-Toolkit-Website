@@ -8,6 +8,15 @@
         "Basic Setup",
         "Interface Overview"
       ]
+    },
+    {
+      "name": "Technical Documentation",
+      "subcategories": [
+        "Quick Access Functions",
+        "Optimization Functions",
+        "Tools Functions",
+        "MMD Functions"
+      ]
     }
   ]
 }
