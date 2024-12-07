@@ -1,0 +1,34 @@
+{
+    "faqs": [
+        {
+            "id": 100,
+            "category": "Technical Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the Armature Validation System work?",
+            "answer": "The armature validation system uses multiple validation layers to ensure proper avatar setup:\n\n### Validation Modes\n- **Strict Mode**: Full hierarchy and symmetry validation\n- **Basic Mode**: Essential bone presence checks\n- **None**: Bypasses validation\n\n### Technical Implementation\n```python\nvalidate_armature(armature)\n```\nPerforms these checks:\n1. Basic validation of armature object and bone data\n2. Essential bone presence (hips, spine, chest, neck, head)\n3. Bone hierarchy validation in strict mode\n4. Symmetry validation for paired bones\n\n### Bone Name Processing\n- Uses simplified bone name matching\n- Handles multiple naming conventions\n- Supports localized bone names\n\n[note]The validation system is extensible through the bone_names dictionary for additional naming conventions.[/note]",
+            "keywords": ["validation", "armature", "technical", "bones", "hierarchy"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 101,
+            "category": "Technical Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the Pose Mode System work?",
+            "answer": "The pose mode system manages pose states and transformations:\n\n### Start Pose Mode\n```python\nAvatarToolkit_OT_StartPoseMode\n```\n- Validates armature state\n- Switches to pose mode\n- Preserves selection state\n\n### Stop Pose Mode\n```python\nAvatarToolkit_OT_StopPoseMode\n```\n- Clears all pose transformations\n- Handles inverse selections\n- Returns to object mode\n\n### Pose to Shape Key\n```python\nAvatarToolkit_OT_ApplyPoseAsShapekey\n```\n- Caches vertex positions\n- Creates new shape keys\n- Handles multiple mesh objects\n- Preserves vertex group weights\n\n### Apply as Rest Pose\n```python\nAvatarToolkit_OT_ApplyPoseAsRest\n```\n- Updates rest pose state\n- Handles shape key deformations\n- Preserves modifier stack\n- Updates mesh coordinates\n\n[note]All pose operations include proper cleanup and state restoration.[/note]",
+            "keywords": ["pose", "technical", "shape keys", "rest pose", "transformations"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 102,
+            "category": "Technical Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the Import/Export System work?",
+            "answer": "The import/export system handles multiple file formats and conversion processes:\n\n### Import System\n```python\nimport_types dictionary\n```\nSupports multiple formats:\n- FBX with custom import settings\n- PMX with full MMD support\n- PMD with legacy support\n- Multiple other formats\n\n### PMX Import Process\n- Reads binary PMX data\n- Handles bone hierarchies\n- Processes materials and textures\n- Manages vertex weights\n- Creates shape keys\n\n### Export System\n```python\nAvatarToolKit_OT_ExportFBX\nAvatarToolKit_OT_ExportResonite\n```\nFeatures:\n- FBX export with optimized settings\n- Resonite-specific format handling\n- Material conversion\n- Animation data preservation\n\n[note]The system includes progress tracking and error handling for large files.[/note]",
+            "keywords": ["import", "export", "technical", "file formats", "conversion"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        }
+    ]
+}
