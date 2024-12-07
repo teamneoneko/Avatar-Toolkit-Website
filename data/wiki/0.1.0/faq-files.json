@@ -5,6 +5,7 @@
         "basic-setup",
         "interface",
         "quick-access-functions",
-        "optimization-functions"
+        "optimization-functions",
+        "tools-functions"
     ]
 }
