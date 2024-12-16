@@ -15,7 +15,15 @@
         "Quick Access Functions",
         "Optimization Functions",
         "Tools Functions",
-        "MMD Functions"
+        "Custom Avatar Functions",
+        "Viseme Functions",
+        "Eye Tracking Functions"
+      ]
+    },
+    {
+      "name": "Policies",
+      "subcategories": [
+        "Version Support"
       ]
     }
   ]
