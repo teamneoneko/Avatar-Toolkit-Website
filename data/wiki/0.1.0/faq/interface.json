@@ -55,21 +55,55 @@
             "id": 7,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
-            "question": "What is the MMD Panel?",
-            "answer": "The MMD Panel contains specialized tools for working with MMD models. Here's what each section offers:\n\n### Basic MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-basic.png[/image]\nEssential MMD utilities:\n- **Fix Bone Names**: Correct MMD bone naming conventions\n- **Fix Bone Hierarchy**: Adjust bone relationships\n- **Fix Bone Weights**: Optimize weight assignments\n\n### Advanced MMD Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-advanced.png[/image]\nAdvanced features:\n- **Fix MMD Features**: Repair MMD-specific components\n- **Advanced Bone Operations**: Complex bone modifications\n\n### MMD Settings\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/interface/mmd-settings.png[/image]\nCustomization options:\n- Keep Upper Chest\n- Remove Unused Bones\n- Cleanup Shape Keys\n\n[note]These tools are specifically designed for MMD model optimization and conversion.[/note]",
-            "keywords": ["interface", "mmd", "panel", "bones", "weights", "cleanup"],
+            "question": "What is the Custom Avatar Panel?",
+            "answer": "The Custom Avatar Panel provides tools for creating and merging custom avatars. It consists of two main modes:\n\n### Armature Mode\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/custom/armature-mode.png[/image]\nTools for merging armatures:\n- Merge All Bones: Combines all bones from both armatures\n- Apply Transforms: Applies all transformations before merging\n- Join Meshes: Combines meshes after merging\n- Remove Zero Weights: Cleans up weight groups\n- Cleanup Shape Keys: Optimizes shape keys during merge\n\n### Mesh Mode\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/custom/mesh-mode.png[/image]\nTools for attaching meshes to armatures:\n- Select Target Armature\n- Choose Mesh to Attach\n- Select Target Bone\n\n[note]All operations require a valid armature selection to function properly.[/note]",
+            "keywords": ["interface", "custom avatar", "panel", "armature", "mesh", "merge", "attach"],
             "version": "0.1.0",
             "lastUpdated": "2024-12-06",
             "history": [
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
-                    "changes": "Initial documentation of MMD Panel interface"
+                    "changes": "Initial documentation of Custom Avatar Panel interface"
                 }
             ]
         },
         {
             "id": 8,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Visemes Panel?",
+            "answer": "The Visemes Panel provides tools for creating and previewing visemes (mouth shapes) for your avatar. Here's what each section offers:\n\n### Shape Key Selection\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/visemes/shape-selection.png[/image]\nSelect the required shape keys for viseme creation:\n- Mouth A Shape Key\n- Mouth O Shape Key\n- Mouth CH Shape Key\n- Shape Intensity Slider\n\n### Preview Controls\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/visemes/preview-controls.png[/image]\nPreview your viseme setup:\n- Start/Stop Preview\n- Preview Selection Dropdown\n- Live Preview Updates\n\n### Creation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/visemes/creation-tools.png[/image]\nGenerate viseme shape keys with one click:\n- Create Visemes Button\n\n[note]This panel requires an active mesh with shape keys to function. If no shape keys are present, the panel will display a warning message.[/note]",
+            "keywords": ["interface", "visemes", "panel", "shape keys", "preview", "mouth shapes"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Visemes Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Eye Tracking Panel?",
+            "answer": "The Eye Tracking Panel provides comprehensive tools for setting up and testing eye tracking on your avatar. It supports both SDK2 and AV3 setups:\n\n### SDK Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/eye-tracking/sdk-version.png[/image]\nChoose between:\n- SDK2: Full eye tracking setup with blinking\n- AV3: Basic eye tracking bone setup\n\n### SDK2 Creation Mode\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/eye-tracking/creation-mode.png[/image]\nComplete setup options:\n- Bone Setup (Head, Left Eye, Right Eye)\n- Mesh Selection\n- Shape Key Configuration (Wink, Lowerlid)\n- Advanced Options (Blinking, Movement, Distance)\n\n### SDK2 Testing Mode\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/eye-tracking/testing-mode.png[/image]\nComprehensive testing tools:\n- Eye Rotation Controls (X/Y axis)\n- Distance Adjustment\n- Blink Testing\n- Lowerlid Movement Testing\n\n### AV3 Setup\n[image:800:400]https://cdn.neoneko.xyz/avatar-toolkit/eye-tracking/av3-setup.png[/image]\nSimplified bone setup:\n- Head Bone Selection\n- Eye Bone Selection\n- Quick Setup Button\n\n[note]All eye tracking features require a valid armature with properly named bones.[/note]",
+            "keywords": ["interface", "eye tracking", "panel", "SDK2", "AV3", "bones", "shape keys", "testing"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Eye Tracking Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 10,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Settings Panel?",
@@ -86,7 +120,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": 11,
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Updater Panel?",
@@ -104,3 +138,4 @@
         }
     ]
 }
+
