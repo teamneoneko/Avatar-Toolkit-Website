@@ -8,7 +8,7 @@ class VersionSelector {
     initializeElements() {
         this.officialSelector = document.getElementById('official-selector');
         this.backButton = document.getElementById('back-button');
-        this.typeSelector = document.querySelector('.feature-box');
+        this.featureBox = document.querySelector('.feature-box');
         this.versionSelector = document.querySelector('.version-selector');
         this.select = document.getElementById('blender-version-select');
         this.downloadButton = document.getElementById('download-button');
@@ -22,29 +22,28 @@ class VersionSelector {
 
     bindEvents() {
         this.officialSelector.addEventListener('click', () => this.showVersionSelector());
-        this.backButton.addEventListener('click', () => this.showTypeSelector());
+        this.backButton.addEventListener('click', () => this.showFeatureBox());
         this.select.addEventListener('change', () => this.handleVersionChange());
         this.downloadButton.addEventListener('click', () => this.handleDownload());
     }
 
     showVersionSelector() {
-        this.typeSelector.style.display = 'none';
+        this.featureBox.style.display = 'none';
         this.versionSelector.style.display = 'block';
         this.backButton.style.display = 'block';
         this.resultContainer.style.display = 'none';
         this.loadVersions();
     }
 
-    showTypeSelector() {
-        this.typeSelector.style.display = 'block';
+    showFeatureBox() {
+        this.featureBox.style.display = 'block';
         this.versionSelector.style.display = 'none';
         this.backButton.style.display = 'none';
-        this.resultContainer.style.display = 'none';
     }
 
     async loadVersions() {
         const loadingDiv = document.createElement('div');
-        loadingDiv.className = 'loading';
+        loadingDiv.className = 'loading-spinner';
         this.select.parentNode.appendChild(loadingDiv);
 
         try {
@@ -61,13 +60,14 @@ class VersionSelector {
             this.populateVersionSelect(dataArray, files);
         } catch (error) {
             console.error('Error loading versions:', error);
+            this.showError('Failed to load version data');
         } finally {
             loadingDiv.remove();
         }
     }
 
     populateVersionSelect(dataArray, files) {
-        this.select.innerHTML = '<option value="">Choose your Blender version</option>';
+        this.select.innerHTML = '<option value="">Select Blender Version</option>';
         
         dataArray.forEach((data, index) => {
             const option = document.createElement('option');
@@ -76,7 +76,6 @@ class VersionSelector {
             this.select.appendChild(option);
         });
 
-        this.downloadButton.disabled = true;
         this.resetDisplayFields();
     }
 
@@ -92,60 +91,69 @@ class VersionSelector {
     async handleVersionChange() {
         const selectedFile = this.select.value;
         if (!selectedFile) {
-            this.downloadButton.disabled = true;
             this.resultContainer.style.display = 'none';
             return;
         }
 
         const loadingDiv = document.createElement('div');
-        loadingDiv.className = 'loading';
+        loadingDiv.className = 'loading-spinner';
         this.select.parentNode.appendChild(loadingDiv);
 
         try {
             const response = await fetch(`https://raw.githubusercontent.com/teamneoneko/Avatar-Toolkit-Website/main/data/BlenderVersions/${selectedFile}`);
             const data = await response.json();
 
-            this.latestVersion.textContent = data.latestVersion || 'N/A';
-            this.developmentStatus.textContent = data.developmentStatus || 'N/A';
-            this.releaseDate.textContent = data.releaseDate || 'N/A';
-            this.eolDate.textContent = data.eolDate || 'N/A';
-            this.description.innerHTML = data.description || '';
+            // Update version information
+            this.latestVersion.textContent = data.version;
+            this.developmentStatus.textContent = data.developmentStatus;
+            this.releaseDate.textContent = data.releaseDate;
+            this.eolDate.textContent = data.eolDate;
+            this.description.innerHTML = data.description;
 
-            const links = {
-                'github-link': data.githubLink,
-                'download-link': data.downloadLink,
-                'wiki-link': data.wikiLink,
-                'discord-link': data.discordLink,
-                'archive-link': data.archiveLink
-            };
+            // Update download button
+            this.currentDownloadUrl = data.downloadLink;
 
-            let hasSupport = false;
-            Object.entries(links).forEach(([id, url]) => {
-                const element = document.getElementById(id);
-                if (element && url) {
-                    element.href = url;
-                    element.style.display = 'inline-block';
-                    if (id === 'wiki-link' || id === 'discord-link') {
-                        hasSupport = true;
-                    }
-                } else if (element) {
-                    element.style.display = 'none';
+            // Update links
+            ['github', 'wiki', 'discord', 'archive'].forEach(type => {
+                const link = document.getElementById(`${type}-link`);
+                if (link) {
+                    const url = data[`${type}Link`];
+                    link.href = url || '#';
+                    link.style.display = url ? 'flex' : 'none';
                 }
             });
 
+            // Show/hide unsupported message
             const unsupportedMessage = document.getElementById('unsupported-message');
-            unsupportedMessage.style.display = hasSupport ? 'none' : 'block';
+            if (unsupportedMessage) {
+                unsupportedMessage.style.display = data.wikiLink || data.discordLink ? 'none' : 'block';
+            }
 
-            this.currentDownloadUrl = data.downloadLink || null;
-            this.downloadButton.disabled = !this.currentDownloadUrl;
             this.resultContainer.style.display = 'block';
+            this.animateResults();
+
         } catch (error) {
             console.error('Error loading version details:', error);
-            this.downloadButton.disabled = true;
-            this.resultContainer.style.display = 'none';
+            this.showError('Failed to load version details');
         } finally {
             loadingDiv.remove();
         }
+    }
+
+    animateResults() {
+        this.resultContainer.style.opacity = '0';
+        requestAnimationFrame(() => {
+            this.resultContainer.style.opacity = '1';
+            this.resultContainer.style.transition = 'opacity 0.3s ease';
+        });
+    }
+
+    showError(message) {
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.textContent = message;
+        this.select.parentNode.appendChild(errorDiv);
+        setTimeout(() => errorDiv.remove(), 3000);
     }
 
     handleDownload() {
