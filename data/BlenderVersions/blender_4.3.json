@@ -1,13 +1,13 @@
 {
-  "version": "4.3 Beta",
-  "latestVersion": "4.3.0.0Beta",
-  "releaseDate": "2024-10-25",
-  "eolDate": "Not Set",
-  "developmentStatus": "beta",
+  "version": "Blender 4.3.0",
+  "latestVersion": "0.1.1 Alpha 1",
+  "releaseDate": "2024-12-19",
+  "eolDate": "When Alpha 2 releases",
+  "developmentStatus": "alpha",
   "archiveLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.3/",
   "description": "<div class='highlight-warning'>WE DO NOT RECOMMEND BLENDER 4.3 CURRENTLY AS IT'S IN BETA. PLEASE USE BLENDER 4.1 OR 3.6 INSTEAD.</div><br><div class='highlight-warning'>Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.</div><br><div class='highlight-info'>The unofficial Cats add-on includes experimental support for Blender 4.3.</div><br><div class='highlight-note'>For support, please use the Unofficial Cats Discord for known issues.</div><br><div class='highlight-warning'>Do not ask for help with the unofficial version in the official Cats Discord server.</div>",
   "unofficial": {
-    "githubLink": "https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/releases/tag/4.3.0.0",
+    "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.1.1",
     "downloadLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.3/CatsBlenderPlugin4.3Latest.zip",
     "wikiLink": "wiki.html",
     "discordLink": "https://discord.catsblenderplugin.xyz/"
