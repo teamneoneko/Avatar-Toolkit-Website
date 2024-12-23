@@ -72,7 +72,7 @@ class VersionSelector {
         dataArray.forEach((data, index) => {
             const option = document.createElement('option');
             option.value = files[index];
-            option.textContent = `Blender ${data.version}`;
+            option.textContent = `${data.version}`;
             this.select.appendChild(option);
         });
 
@@ -111,22 +111,29 @@ class VersionSelector {
             this.description.innerHTML = data.description;
 
             // Update download button
-            this.currentDownloadUrl = data.downloadLink;
+            this.currentDownloadUrl = data.unofficial?.downloadLink;
 
             // Update links
-            ['github', 'wiki', 'discord', 'archive'].forEach(type => {
-                const link = document.getElementById(`${type}-link`);
-                if (link) {
-                    const url = data[`${type}Link`];
-                    link.href = url || '#';
-                    link.style.display = url ? 'flex' : 'none';
+            const links = {
+                'github-link': data.unofficial?.githubLink,
+                'wiki-link': data.unofficial?.wikiLink,
+                'discord-link': data.unofficial?.discordLink,
+                'archive-link': data.archiveLink
+            };
+
+            Object.entries(links).forEach(([id, url]) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.href = url || '#';
+                    element.style.display = url ? 'flex' : 'none';
                 }
             });
 
             // Show/hide unsupported message
+            const hasSupport = data.unofficial?.wikiLink || data.unofficial?.discordLink;
             const unsupportedMessage = document.getElementById('unsupported-message');
             if (unsupportedMessage) {
-                unsupportedMessage.style.display = data.wikiLink || data.discordLink ? 'none' : 'block';
+                unsupportedMessage.style.display = hasSupport ? 'none' : 'block';
             }
 
             this.resultContainer.style.display = 'block';

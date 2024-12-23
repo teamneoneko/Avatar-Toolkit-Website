@@ -4,12 +4,12 @@
   "releaseDate": "2024-12-19",
   "eolDate": "When Alpha 2 releases",
   "developmentStatus": "alpha",
-  "archiveLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.3/",
-  "description": "<div class='highlight-warning'>WE DO NOT RECOMMEND BLENDER 4.3 CURRENTLY AS IT'S IN BETA. PLEASE USE BLENDER 4.1 OR 3.6 INSTEAD.</div><br><div class='highlight-warning'>Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.</div><br><div class='highlight-info'>The unofficial Cats add-on includes experimental support for Blender 4.3.</div><br><div class='highlight-note'>For support, please use the Unofficial Cats Discord for known issues.</div><br><div class='highlight-warning'>Do not ask for help with the unofficial version in the official Cats Discord server.</div>",
+  "archiveLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.3/",
+  "description": "<div class='highlight-warning'>Avatar Toolkit is currently in ALPHA. Expect bugs and issues during this early development phase.</div><br><div class='highlight-warning'>Having trouble installing? Check our installation guide: <a href='https://avatartoolkit.xyz/wiki.html?#how-to-install-avatar-toolkit'>Installation Guide</a></div><br><div class='highlight-info'>This first release includes essential features for avatar creation:<br>• Basic Armature Validation System<br>• Comprehensive Import Support<br>• Full Pose Mode Features<br>• FBX and Resonite Export Options<br>• Optimization Tools Suite<br>• Custom Avatar Tools<br>• Viseme Creation<br>• Eye Tracking Support (Legacy and VRChat SDK3)<br>• Built-in Updater<br>• Debug Console</div><br><div class='highlight-note'>Avatar Toolkit includes an armature validation system. Some tools require either a standard armature or validation to be disabled. Learn more about configuration here: <a href='https://avatartoolkit.xyz/wiki.html?#configuring-avatar-toolkit-settings'>Configuration Guide</a></div>",
   "unofficial": {
     "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.1.1",
-    "downloadLink": "https://cdn.neoneko.xyz/catsblenderplugin/blender4.3/CatsBlenderPlugin4.3Latest.zip",
+    "downloadLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.3/Avatar-Toolkit-Alpha0.1.1.zip",
     "wikiLink": "wiki.html",
-    "discordLink": "https://discord.catsblenderplugin.xyz/"
+    "discordLink": "https://discord.neoneko.xyz/"
   }
 }
