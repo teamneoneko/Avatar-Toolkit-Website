@@ -1,0 +1,21 @@
+{
+    "faqs": [
+      {
+        "id": 1,
+        "version": "0.1.0",
+        "category": "Getting Started",
+        "subcategory": "Requirements",
+        "question": "System Requirements and Recommended Setup",
+        "answer": "Before installing Avatar Toolkit, ensure your system meets these requirements:\n\n1) Blender Version\n- Blender 4.3 or newer is required\n- Blender 4.3 is the current recommended version\n\n\n2) Python Requirements\n- If using a custom Python installation with Blender, ensure NumPy is installed\n- Default Blender installation includes all required packages\n\n3) Recommended Setup\n- Download Blender directly from [link]https://www.blender.org/download/|blender.org[/link]\n- Use Blender 4.3 for the best experience\n\n[note]Using Blender's default Python environment is recommended as it comes with all necessary packages pre-installed.[/note]\n\n[info]Avatar Toolkit is optimized for Blender 4.3's new features and improvements.[/info]",
+        "keywords": ["requirements", "blender", "version", "python", "numpy", "setup", "system requirements"],
+        "lastUpdated": "2024-12-06",
+        "history": [
+          {
+            "version": "0.1.0",
+            "date": "2024-12-06",
+            "changes": "Initial requirements guide"
+          }
+        ]
+      }
+    ]
+  }

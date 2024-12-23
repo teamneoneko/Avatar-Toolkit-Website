@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const versionSelect = document.getElementById('versionSelect');
     
     // Set initial version
-    versionSelect.value = '0.1.0';
+    versionSelect.value = '0.1.1';
 
     // Global data storage
     let faqData = [];
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     
         return processedContent
-            .replace(/\[image:(\d+):(\d+)\](.*?)\[\/image\]/g, '<img loading="lazy" src="$3" width="$1" height="$2" alt="FAQ Image">')
+            .replace(/\[image:(\d+):(\d+)\](.*?)\[\/image\]/g, '<img loading="lazy" src="$3" style="max-width: 100%; height: auto; object-fit: contain;" alt="FAQ Image">')
             .replace(/\[image\](.*?)\[\/image\]/g, '<img loading="lazy" src="$1" alt="FAQ Image">')
             .replace(/\[link\](.*?)\|(.*?)\[\/link\]/g, '<a href="$1">$2</a>')
             .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')

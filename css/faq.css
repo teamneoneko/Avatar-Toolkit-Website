@@ -93,6 +93,14 @@
     color: var(--link-color);
 }
 
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 1rem auto;
+}
+
 .faq-question:hover {
     background: var(--menu-hover-background);
     color: var(--link-color);
