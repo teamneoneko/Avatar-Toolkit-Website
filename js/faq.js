@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Set initial version
     versionSelect.value = '0.1.1';
+    const latestVersion = versionSelect.value;
 
     // Global data storage
     let faqData = [];
@@ -171,9 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const versionBanner = document.createElement('div');
         versionBanner.className = 'version-banner';
         
-        const bannerText = versionSelect.value === 'legacy' 
-            ? `This documentation applies to Avatar Toolkit version ${versionSelect.value} which is an older version, if your using a newer version please select it on the left hand side`
-            : `This documentation covers the latest Avatar Toolkit (Version ${versionSelect.value}). If you're using an older version, please select it on the dropdown on the left`;     
+        const bannerText = versionSelect.value === latestVersion
+            ? `This documentation covers the latest Avatar Toolkit (Version ${versionSelect.value}). If you're using an older version, please select it on the dropdown on the left`
+            : `This documentation applies to Avatar Toolkit version ${versionSelect.value} which is an older version, if you're using a newer version please select it on the left hand side`;    
         
         versionBanner.innerHTML = `<i class="fas fa-info-circle"></i> ${bannerText}`;
         faqContainer.appendChild(versionBanner);
