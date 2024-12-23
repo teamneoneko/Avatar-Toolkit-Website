@@ -73,11 +73,16 @@
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Visemes Panel?",
-            "answer": "The Visemes Panel provides tools for creating and previewing visemes (mouth shapes) for your avatar. Here's what each section offers:\n\n### Shape Key Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes1.png[/image]\nSelect the required shape keys for viseme creation:\n- Mouth A Shape Key\n- Mouth O Shape Key\n- Mouth CH Shape Key\n- Shape Intensity Slider\n\n### Preview Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes2.png[/image]\nPreview your viseme setup:\n- Start/Stop Preview\n- Preview Selection Dropdown\n- Live Preview Updates\n\n### Creation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes3.png[/image]\nGenerate viseme shape keys with one click:\n- Create Visemes Button\n\n[note]This panel requires an active mesh with shape keys to function. If no shape keys are present, the panel will display a warning message.[/note]",
+            "answer": "The Visemes Panel provides tools for creating and previewing visemes (mouth shapes) for your avatar. Here's what each section offers:\n\n### Mesh Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes1.png[/image]\nSelect the target mesh from your armature:\n- Dropdown menu showing all meshes in current armature\n- Automatically filters meshes with shape keys\n\n### Shape Key Selection\nSelect the required shape keys for viseme creation:\n- Mouth A Shape Key\n- Mouth O Shape Key\n- Mouth CH Shape Key\n- Shape Intensity Slider\n\n### Preview Controls\nPreview your viseme setup (requires Object Mode):\n- Start/Stop Preview\n- Preview Selection Dropdown\n- Live Preview Updates\n\n### Creation Tools\nGenerate viseme shape keys with one click:\n- Create Visemes Button\n\n[note]Preview mode is only available in Object Mode. The panel requires an active mesh with shape keys to function.[/note]",
             "keywords": ["interface", "visemes", "panel", "shape keys", "preview", "mouth shapes"],
             "version": "0.1.0",
             "lastUpdated": "2024-12-06",
             "history": [
+                {
+                    "version": "0.1.1",
+                    "date": "2024-12-23",
+                    "changes": "Added mesh selection dropdown and Object Mode requirement for viseme creation"
+                },
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
