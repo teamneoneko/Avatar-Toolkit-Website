@@ -118,7 +118,8 @@ class VersionSelector {
                 'github-link': data.unofficial?.githubLink,
                 'wiki-link': data.unofficial?.wikiLink,
                 'discord-link': data.unofficial?.discordLink,
-                'archive-link': data.archiveLink
+                'archive-link': data.archiveLink,
+                'issue-link': data.unofficial?.issueLink
             };
 
             Object.entries(links).forEach(([id, url]) => {
