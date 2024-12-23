@@ -172,8 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
         versionBanner.className = 'version-banner';
         
         const bannerText = versionSelect.value === 'legacy' 
-            ? "This documentation applies to Legacy Cats Blender Plugin (Versions 4.2.1.4 and 4.3.0.0 for Blender 4.2 and 4.3 or for any version of Cats which is on Blender 4.1 and below). If you're using a newer version, please switch to the current documentation using the dropdown on the left."
-            : "This documentation covers the latest Cats Blender Plugin (Version 4.2.2.0+ for Blender 4.2 and Version 4.3.1.0+ for Blender 4.3). For older versions, please switch to the legacy documentation using the dropdown on the left.";
+            ? `This documentation applies to Avatar Toolkit version ${versionSelect.value} which is an older version, if your using a newer version please select it on the left hand side`
+            : `This documentation covers the latest Avatar Toolkit (Version ${versionSelect.value}). If you're using an older version, please select it on the dropdown on the left`;     
         
         versionBanner.innerHTML = `<i class="fas fa-info-circle"></i> ${bannerText}`;
         faqContainer.appendChild(versionBanner);
