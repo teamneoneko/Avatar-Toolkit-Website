@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const versionSelect = document.getElementById('versionSelect');
     
     // Set initial version
-    versionSelect.value = '0.1.1';
+    versionSelect.value = '0.1.2';
     const latestVersion = versionSelect.value;
 
     // Global data storage
