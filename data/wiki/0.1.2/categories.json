@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Getting Started",
+      "subcategories": [
+        "Requirements",
+        "Installation", 
+        "Basic Setup",
+        "Interface Overview"
+      ]
+    },
+    {
+      "name": "Advanced Documentation",
+      "subcategories": [
+        "Quick Access Functions",
+        "Optimization Functions",
+        "Tools Functions",
+        "Custom Avatar Functions",
+        "Viseme Functions",
+        "Eye Tracking Functions"
+      ]
+    },
+    {
+      "name": "Policies",
+      "subcategories": [
+        "Version Support"
+      ]
+    },
+    {
+      "name": "Other",
+      "subcategories": [
+        "Supported Formats"
+      ]
+    }
+  ]
+}
