@@ -5,11 +5,16 @@
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Quick Access Panel?",
-            "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of three main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess1.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess2.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess3.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports FBX format)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status and current Blender mode (Object or Pose mode).[/note]",
+            "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of three main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess1.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess2.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess3.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports multiple formats) [View supported formats](https://avatartoolkit.xyz/wiki.html?version=0.1.2#what-file-formats-are-supported-by-the-avatar-toolkit)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status and current Blender mode (Object or Pose mode).[/note]",
             "keywords": ["interface", "quick access", "panel", "armature", "pose", "import", "export", "controls"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-12-06",
+            "version": "0.1.2",
+            "lastUpdated": "2025-01-26",
             "history": [
+                {
+                    "version": "0.1.2",
+                    "date": "2025-01-26",
+                    "changes": "Updated import section to reflect multiple format support and added link to formats documentation"
+                },
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
