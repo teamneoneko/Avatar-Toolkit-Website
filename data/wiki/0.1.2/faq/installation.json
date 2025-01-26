@@ -1,0 +1,21 @@
+{
+    "faqs": [
+      {
+        "id": 2,
+        "version": "0.1.0",
+        "category": "Getting Started",
+        "subcategory": "Installation",
+        "question": "How to Install Avatar Toolkit",
+        "answer": "Installing Avatar Toolkit for Blender 4.3 is straightforward:\n\n1) Download the latest version from [link]https://avatartoolkit.xyz/|Avatar Toolkit Releases[/link]\n\n2) In Blender, go to Edit > Preferences\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/install/install1.png[/image]\n\n3) Click on the 'Extensions' tab, then click the dropdown arrow in the top right and select 'Install from Disk...'\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/install/install2.png[/image]\n\n4) Navigate to the downloaded .zip file and select it\n\n5) If the plugin hasn't automatically been enabled, go to Add-ons, then find the plugin and enable it by checking the checkbox next to 'Avatar Toolkit'\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/install/install3.png[/image]\n\n[note]Avatar Toolkit requires Blender 4.3 or newer. Older versions are not supported.[/note]\n\n[info]After installation, you'll find Avatar Toolkit in the 'N' panel of the 3D Viewport under the 'Avatar Toolkit' tab.[/info]",
+        "keywords": ["install", "setup", "getting started", "download", "enable", "addon", "plugin", "extensions"],
+        "lastUpdated": "2024-12-06",
+        "history": [
+          {
+            "version": "0.1.0",
+            "date": "2024-12-06",
+            "changes": "Initial installation guide"
+          }
+        ]
+      }
+    ]
+  }
