@@ -10,6 +10,7 @@
         "custom-avatar-functions",
         "viseme-functions",
         "eye-tracking-functions",
+        "supported-formats",
         "policies"
     ]
 }
