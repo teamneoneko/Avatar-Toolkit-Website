@@ -5,13 +5,22 @@
             "category": "Other",
             "subcategory": "Supported Formats",
             "question": "What file formats are supported by the Avatar Toolkit?",
-            "answer": "The Avatar Toolkit supports multiple file formats for importing. Some formats may require additional third-party plugins.\n\n### Fully Supported Formats\n- FBX\n- SMD\n- GLTF\n- GLB\n- GC\n- OBJ\n- DAE\n- 3DS\n- STL\n- MTL\n- x3D\n- WRL\n- VMD\n- VRM (requires plugin)\n- animx\n\n### Semi-Supported Formats\n**PMX**\n- Some components may not import correctly\n- Importer still under development\n\n**PMD**\n- Some components may not import correctly\n- May encounter errors during import\n- Importer still under development\n\n[note]Some formats like VRM require additional plugins to function.[/note]\n\n[warning]PMX and PMD support is currently experimental and may not provide full functionality.[/warning]",
+            "answer": "The Avatar Toolkit supports multiple file formats for importing. Some formats may require additional third-party plugins.\n\n### Fully Supported Formats\n- FBX\n- SMD\n- GLTF\n- GLB\n- GC\n- OBJ\n- DAE\n- 3DS\n- STL\n- MTL\n- x3D\n- WRL\n- VMD\n- VRM (requires plugin)\n- animx\n\n[note]Some formats like VRM require additional plugins to function.[/note]\n\n[warning]PMX and PMD was removed in Alpha 2 (0.2.0) because the importers were not working fully, we are going back to the drawing board and PMX and PMD support will be released in Alpha 3.[/warning]",
             "keywords": ["formats", "import", "files", "supported formats", "file types"],
             "version": "0.1.0",
-            "lastUpdated": "2025-01-16"
-        }
-    ],
-    "version": "0.1.0",
-    "date": "2025-01-16",
-    "changes": "Initial documentation of Supported Formats"
-}
+            "lastUpdated": "2025-01-16",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial settings guide"
+                },
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-24",
+                    "changes": "Updated Formats to remove PMX and PMD"
+                }
+            ]
+          }
+        ]
+      }
