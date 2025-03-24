@@ -1,0 +1,21 @@
+{
+    "faqs": [
+        {
+            "id": 600,
+            "category": "Policies",
+            "subcategory": "Version Support",
+            "question": "What is Avatar Toolkit's Version Support Policy?",
+            "answer": "Avatar Toolkit follows a structured version support policy to ensure optimal compatibility and feature development:\n\n### Version Numbering\n- We use semantic versioning (e.g., 1.0, 1.1)\n- Version numbers appear in package titles and descriptions\n- Format example: Avatar Toolkit 1.1 (Blender 5.0 and 5.1)\n\n### Blender Version Support\nWe actively maintain support for:\n- Latest Blender LTS version\n- Current stable Blender release\n\n**Example Scenario:**\n- Current support: Blender 4.2 LTS and 4.3\n- When Blender 5.0 releases: Support shifts to 4.2 LTS and 5.0\n- When new LTS releases: Support shifts to new LTS and latest stable\n\n### Feature Development\n- New features target latest Blender versions\n- Supported older versions receive:\n  - Bug fixes\n  - Security updates\n  - Stability improvements\n\n[info]This policy ensures users always have access to stable, well-maintained versions while allowing us to leverage new Blender features.[/info]\n\n[note]Check package titles and descriptions for specific Blender version compatibility.[/note]",
+            "keywords": ["policy", "version", "support", "compatibility", "updates"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Version Support"
+                }
+            ]
+        }
+    ]
+}

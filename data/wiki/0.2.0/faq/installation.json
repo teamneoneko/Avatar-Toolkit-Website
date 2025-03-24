@@ -1,0 +1,26 @@
+{
+  "faqs": [
+    {
+      "id": 3,
+      "version": "0.2.0",
+      "category": "Getting Started",
+      "subcategory": "Basic Setup",
+      "question": "Configuring Avatar Toolkit Settings",
+      "answer": "Avatar Toolkit offers several configuration options to customize its behavior:\n\n1) Language Settings\n- Located at the top of the Settings panel\n- Allows you to change the interface language\n- Changes take effect after restarting Blender\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings1.png[/image]\n\n2) Armature Validation Mode\nControls how strictly Avatar Toolkit validates armatures:\n- Strict Mode: Enforces full hierarchy checking and symmetry validation\n- Basic Mode: Only checks for essential bones (hips, spine, chest, neck, head)\n  [note]Basic Mode Warning: This mode performs limited validation and may miss important issues.[/note]\n- None: Disables validation checks\n  [warning]None Mode Warning: This mode disables all validation, which may lead to compatibility issues.[/warning]\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings2.png[/image]\n\n3) Bone Highlighting Settings\n- Enable/disable highlighting of problem bones\n- When enabled, you can use the 'Highlight Problem Bones' button to visualize issues\n- When disabled, you can clear existing highlighting with the 'Clear Bone Highlighting' button\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings3.png[/image]\n\n4) Debug Settings\n- Enable Logging: Activates detailed operation logging for troubleshooting\n- Useful for reporting issues or understanding tool operations\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings4.png[/image]\n\n5) Quick Access Panel Features\n- Select your armature from the dropdown\n- Shows validation status with detailed information:\n  - Found Bones (expandable section)\n  - Non-Standard Bones (expandable section)\n  - Hierarchy Issues (expandable section)\n  - Scale Issues (expandable section)\n- T-Pose validation with detailed feedback\n- Pose Mode Controls for easy armature manipulation\n- Import/Export buttons for quick workflow\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings5.png[/image]\n\n[note]The validation mode setting is particularly important when working with non-standard armatures. Use 'Basic' or 'None' if your armature doesn't follow typical humanoid conventions, but be aware of the limitations.[/note]\n\n[info]Settings are automatically saved and persisted between Blender sessions.[/info]",
+      "keywords": ["settings", "configuration", "validation", "language", "debug", "logging", "armature", "setup", "bone highlighting", "t-pose", "pose mode", "import", "export"],
+      "lastUpdated": "2025-03-24",
+      "history": [
+        {
+          "version": "0.1.0",
+          "date": "2024-12-06",
+          "changes": "Initial settings guide"
+        },
+        {
+          "version": "0.2.0",
+          "date": "2025-03-24",
+          "changes": "Updated to include bone highlighting, expanded validation details, T-pose validation, and pose mode controls"
+        }
+      ]
+    }
+  ]
+}

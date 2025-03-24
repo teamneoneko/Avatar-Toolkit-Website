@@ -1,0 +1,38 @@
+{
+    "faqs": [
+        {
+            "id": 300,
+            "category": "Advanced Documentation",
+            "subcategory": "Custom Avatar Functions",
+            "question": "How does the Armature Merging System work?",
+            "answer": "The armature merging system provides a robust way to combine multiple armatures:\n\n### Pre-Merge Validation\n- Checks transform alignments\n- Validates parent relationships\n- Verifies bone hierarchies\n- Ensures clean transformations\n\n### Merging Process\n**Bone Handling:**\n- Smart bone renaming with .merge suffix\n- Preserves original parent relationships\n- Maintains bone orientations\n- Handles twist bones correctly\n\n**Mesh Processing:**\n- Updates mesh parenting\n- Preserves vertex groups\n- Maintains shape keys\n- Optimizes weight transfers\n\n### Cleanup Operations\n- Removes zero-weight vertex groups\n- Cleans up unused shape keys\n- Fixes bone connections\n- Updates mesh modifiers\n\n[warning]Always make a backup before merging armatures as this operation cannot be undone.[/warning]\n\n[info]The system automatically handles complex hierarchies and maintains proper weight distributions across merged meshes.[/info]",
+            "keywords": ["armature", "merge", "bones", "weights", "hierarchy"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Custom Avatar Functions"
+                }
+            ]
+        },
+        {
+            "id": 301,
+            "category": "Advanced Documentation",
+            "subcategory": "Custom Avatar Functions",
+            "question": "How does the Mesh Attachment System work?",
+            "answer": "The mesh attachment system provides intelligent mesh-to-armature binding:\n\n### Preparation Phase\n- Validates mesh transforms\n- Checks for existing armature modifiers\n- Verifies bone name uniqueness\n- Prepares vertex groups\n\n### Attachment Process\n**Bone Creation:**\n- Intelligent bone placement based on mesh geometry\n- Automatic roll angle calculation\n- Smart parent bone selection\n- Proper bone length setting\n\n**Weight Setup:**\n- Creates targeted vertex groups\n- Sets up automatic weights\n- Handles mesh deformation\n- Preserves mesh shape\n\n### Optimization Features\n- Calculates optimal bone orientation\n- Sets appropriate bone length\n- Maintains proper parenting\n- Ensures clean weight distribution\n\n[info]The system automatically determines the best bone placement based on mesh geometry and existing armature structure.[/info]\n\n[note]This system works best with clean mesh geometry and properly scaled objects.[/note]",
+            "keywords": ["mesh", "attachment", "bones", "weights", "automation"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Custom Avatar Functions"
+                }
+            ]
+        }
+    ]
+}
