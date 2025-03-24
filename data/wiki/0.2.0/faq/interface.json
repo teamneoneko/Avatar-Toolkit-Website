@@ -1,0 +1,150 @@
+{
+    "faqs": [
+        {
+            "id": 4,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Quick Access Panel?",
+            "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of three main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess1.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess2.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess3.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports multiple formats) [View supported formats](https://avatartoolkit.xyz/wiki.html?version=0.1.2#what-file-formats-are-supported-by-the-avatar-toolkit)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status and current Blender mode (Object or Pose mode).[/note]",
+            "keywords": ["interface", "quick access", "panel", "armature", "pose", "import", "export", "controls"],
+            "version": "0.1.2",
+            "lastUpdated": "2025-01-26",
+            "history": [
+                {
+                    "version": "0.1.2",
+                    "date": "2025-01-26",
+                    "changes": "Updated import section to reflect multiple format support and added link to formats documentation"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Quick Access Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview", 
+            "question": "What is the Optimization Panel?",
+            "answer": "The Optimization Panel provides essential tools for optimizing your avatar's materials and meshes. Let's explore each section:\n\n### Materials Optimization\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface1.png[/image]\nThe Materials section contains:\n- **Combine Materials**: Efficiently merges similar materials to reduce draw calls\n\n### Mesh Cleanup\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface2.png[/image]\nTools for mesh optimization:\n- **Remove Doubles**: Quick vertex merging with default settings\n- **Advanced Remove Doubles**: Opens settings panel for precise vertex merging control\n\n### Join Meshes\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface3.png[/image]\nMesh combination tools:\n- **Join All Meshes**: Combines all avatar meshes into one\n- **Join Selected Meshes**: Merges only selected mesh objects\n\n[note]All optimization tools require a valid armature to be selected in the Quick Access Panel.[/note]",
+            "keywords": ["interface", "optimization", "panel", "materials", "mesh", "cleanup", "join meshes"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Optimization Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Tools Panel?",
+            "answer": "The Tools Panel offers a comprehensive set of utilities for avatar customization and optimization. Here's a breakdown of each section:\n\n### General Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface4.png[/image]\nBasic utilities:\n- **Convert to Resonite**: Export your avatar in Resonite-compatible format\n\n### Separation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface5.png[/image]\nMesh separation utilities:\n- **Separate by Materials**: Split mesh based on material assignments\n- **Separate Loose Parts**: Split disconnected mesh components\n\n### Bone Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface6.png[/image]\nArmature manipulation:\n- **Create Digitigrade**: Convert standard legs to digitigrade setup\n- **Weight Tools**: Clean up weight painting and bone constraints\n- **Merge Twist Bones**: Option to combine twist bone weights\n\n### Merge Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface7.png[/image]\nBone merging options:\n- **Merge to Active**: Combine selected bones into active bone\n- **Merge to Parent**: Merge bones with their parents\n- **Connect Bones**: Create connections between bones\n\n### Additional Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface8.png[/image]\nExtra utilities:\n- **Apply Transforms**: Apply object transformations\n- **Clean Shape Keys**: Remove unused shape keys\n\n[note]Many tools require a valid armature selection and specific Blender modes (Edit, Pose, or Object mode).[/note]",
+            "keywords": ["interface", "tools", "panel", "bones", "weights", "separation", "merge", "digitigrade", "shape keys"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Tools Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Custom Avatar Panel?",
+            "answer": "The Custom Avatar Panel provides tools for creating and merging custom avatars. It consists of two main modes:\n\n### Armature Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/custom/custom1.png[/image]\nTools for merging armatures:\n- Merge All Bones: Combines all bones from both armatures\n- Apply Transforms: Applies all transformations before merging\n- Join Meshes: Combines meshes after merging\n- Remove Zero Weights: Cleans up weight groups\n- Cleanup Shape Keys: Optimizes shape keys during merge\n\n### Mesh Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/custom/custom2.png[/image]\nTools for attaching meshes to armatures:\n- Select Target Armature\n- Choose Mesh to Attach\n- Select Target Bone\n\n[note]All operations require a valid armature selection to function properly.[/note]",
+            "keywords": ["interface", "custom avatar", "panel", "armature", "mesh", "merge", "attach"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Custom Avatar Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Visemes Panel?",
+            "answer": "The Visemes Panel provides tools for creating and previewing visemes (mouth shapes) for your avatar. Here's what each section offers:\n\n### Mesh Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes1.png[/image]\nSelect the target mesh from your armature:\n- Dropdown menu showing all meshes in current armature\n- Automatically filters meshes with shape keys\n\n### Shape Key Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes2.png[/image]\nSelect the required shape keys for viseme creation:\n- Mouth A Shape Key\n- Mouth O Shape Key\n- Mouth CH Shape Key\n- Shape Intensity Slider\n\n### Preview Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/visemes/visemes3.png[/image]\nPreview your viseme setup (requires Object Mode):\n- Start/Stop Preview\n- Preview Selection Dropdown\n- Live Preview Updates\n\n### Creation Tools\nGenerate viseme shape keys with one click:\n- Create Visemes Button\n\n[note]Preview mode is only available in Object Mode. The panel requires an active mesh with shape keys to function.[/note]",
+            "keywords": ["interface", "visemes", "panel", "shape keys", "preview", "mouth shapes"],
+            "version": "0.1.1",
+            "lastUpdated": "2024-12-07",
+            "history": [
+                {
+                    "version": "0.1.1",
+                    "date": "2024-12-07",
+                    "changes": "Added mesh selection dropdown and Object Mode requirement for viseme creation"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Visemes Panel interface"
+                }
+            ]
+        },        
+        {
+            "id": 9,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Eye Tracking Panel?",
+            "answer": "The Eye Tracking Panel provides comprehensive tools for setting up and testing eye tracking on your avatar. It supports both SDK2 and AV3 setups:\n\n### SDK Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eyetracking/eyetracking1.png[/image]\nChoose between:\n- SDK2: Full eye tracking setup with blinking\n- AV3: Basic eye tracking bone setup\n\n### SDK2 Creation Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eye-tracking/eyetracking2.png[/image]\nComplete setup options:\n- Bone Setup (Head, Left Eye, Right Eye)\n- Mesh Selection\n- Shape Key Configuration (Wink, Lowerlid)\n- Advanced Options (Blinking, Movement, Distance)\n\n### SDK2 Testing Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eyetracking/eyetracking3.png[/image]\nComprehensive testing tools:\n- Eye Rotation Controls (X/Y axis)\n- Distance Adjustment\n- Blink Testing\n- Lowerlid Movement Testing\n\n### AV3 Setup\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eyetracking/eyetracking4.png[/image]\nSimplified bone setup:\n- Head Bone Selection\n- Eye Bone Selection\n- Quick Setup Button\n\n[note]All eye tracking features require a valid armature with properly named bones.[/note]",
+            "keywords": ["interface", "eye tracking", "panel", "SDK2", "AV3", "bones", "shape keys", "testing"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Eye Tracking Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Settings Panel?",
+            "answer": "The Settings Panel allows you to customize Avatar Toolkit's behavior and preferences:\n\n### Language Settings\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings1.png[/image]\nChoose your preferred interface language from the available options.\n\n### Validation Settings\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings2.png[/image]\nConfigure armature validation rules:\n- Strict Mode: Full validation\n- Basic Mode: Essential checks only\n- None: Disable validation\n\n### Debug Settings\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/settings/ConfiguringAvatarToolkitSettings3.png[/image]\nDeveloper options:\n- Enable Logging: Toggle detailed operation logs\n\n[note]Some settings changes may require a Blender restart to take effect.[/note]",
+            "keywords": ["interface", "settings", "panel", "language", "validation", "debug"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Settings Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Updater Panel?",
+            "answer": "The Updater Panel helps you keep Avatar Toolkit up to date:\n\n### Update Check\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/updater/updater1.png[/image]\nCheck for and install new versions:\n- Check for Updates button\n- Update to Latest Version option\n\n### Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/updater/updater2.png[/image]\nManage versions:\n- Select specific versions\n- View current version\n- Install selected version\n\n[info]Avatar Toolkit automatically checks for updates daily when enabled.[/info]\n\n[note]Blender restart is required after updates to apply changes.[/note]",
+            "keywords": ["interface", "updater", "panel", "version", "update"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Updater Panel interface"
+                }
+            ]
+        }
+    ]
+}
