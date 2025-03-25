@@ -1,0 +1,54 @@
+{
+    "faqs": [
+        {
+            "id": 300,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How does the Resonite Conversion System work?",
+            "answer": "The Resonite conversion system prepares your avatar for the Resonite platform:\n\n### Bone Name Conversion\n- Automatically translates bone names to Resonite format\n- Handles multiple naming conventions\n- Adds necessary IK markers\n- Preserves special bone functions\n\n### Optimization Process\n- Marks non-IK bones appropriately\n- Maintains bone hierarchies\n- Preserves weight assignments\n- Handles twist bone configurations\n\n### Special Handling\n- Processes symmetrical bones\n- Manages expression bones\n- Handles physics bones\n- Preserves animation data\n\n[info]Bones marked with '<noik>' indicate they won't participate in IK calculations.[/info]\n\n[note]This conversion ensures compatibility while maintaining avatar functionality.[/note]",
+            "keywords": ["resonite", "conversion", "bones", "ik", "compatibility"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 301,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Bone Management Tools work?",
+            "answer": "The bone management tools provide comprehensive control over your avatar's skeleton:\n\n### Digitigrade Setup\n- Converts standard legs to digitigrade configuration\n- Creates proper bone chains\n- Maintains weight distributions\n- Preserves IK functionality\n\n### Weight Cleanup\n- Removes zero-weight bones\n- Cleans unused vertex groups\n- Preserves important bones\n- Maintains twist bone functionality\n\n### Constraint Management\n- Removes unnecessary constraints\n- Cleans up bone relationships\n- Optimizes IK chains\n- Preserves essential constraints\n\n[warning]Creating digitigrade legs will modify your avatar's bone structure. Make a backup before proceeding.[/warning]\n\n[note]These tools help optimize your avatar's performance while maintaining functionality.[/note]",
+            "keywords": ["bones", "weights", "constraints", "digitigrade", "cleanup"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 302,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Mesh Separation Tools work?",
+            "answer": "The mesh separation tools help organize and optimize your avatar's meshes:\n\n### Material Separation\n- Splits meshes by material assignments\n- Preserves UV mappings\n- Maintains vertex groups\n- Keeps shape keys intact\n- Optimizes material usage\n\n### Loose Parts Separation\n- Identifies disconnected mesh segments\n- Creates individual mesh objects\n- Preserves material assignments\n- Maintains armature relationships\n- Keeps vertex weights\n\n[info]Separating meshes can help with organization and specific platform optimizations.[/info]\n\n[note]Separated meshes maintain their original properties and can be rejoined later if needed.[/note]",
+            "keywords": ["mesh", "separation", "materials", "loose parts", "organization"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 303,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Bone Merging Tools work?",
+            "answer": "The bone merging tools offer various ways to combine and optimize bones:\n\n### Merge to Active\n- Combines selected bones into active bone\n- Transfers vertex weights\n- Updates bone constraints\n- Preserves deformations\n- Maintains shape keys\n\n### Merge to Parent\n- Merges bones with their parents\n- Transfers child bone weights\n- Updates bone hierarchies\n- Preserves animations\n- Maintains mesh deformations\n\n### Connect Bones\n- Links disconnected bones\n- Fixes bone chains\n- Maintains proper scaling\n- Preserves bone roll\n- Updates bone relationships\n\n[warning]Bone merging operations are permanent and can affect animations. Always make a backup before proceeding.[/warning]\n\n[note]These tools are useful for optimizing complex armatures while maintaining functionality.[/note]",
+            "keywords": ["bones", "merging", "weights", "optimization", "hierarchy"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "id": 304,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Additional Tools work?",
+            "answer": "The additional tools provide essential utilities for avatar optimization:\n\n### Apply Transforms\n- Applies all transformations to armature and meshes\n- Resets transformation values\n- Preserves visual appearance\n- Updates mesh coordinates\n- Maintains bone relationships\n\n### Clean Shape Keys\n- Removes unused shape keys\n- Identifies duplicate shapes\n- Preserves category markers\n- Maintains blend shapes\n- Optimizes memory usage\n\n### Tolerance Control\n- Customizable cleanup threshold\n- Precise shape key comparison\n- Prevents accidental removal\n- Maintains subtle expressions\n\n[info]Regular cleanup of shape keys can significantly improve avatar performance.[/info]\n\n[note]These tools help maintain a clean and efficient avatar setup.[/note]",
+            "keywords": ["transforms", "shape keys", "cleanup", "optimization", "maintenance"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06"
+        }
+    ]
+}
