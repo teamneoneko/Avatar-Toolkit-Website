@@ -49,18 +49,23 @@
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Tools Panel?",
-            "answer": "The Tools Panel offers a comprehensive set of utilities for avatar customization and optimization. Here's a breakdown of each section:\n\n### General Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface4.png[/image]\nBasic utilities:\n- **Convert to Resonite**: Export your avatar in Resonite-compatible format\n\n### Separation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface5.png[/image]\nMesh separation utilities:\n- **Separate by Materials**: Split mesh based on material assignments\n- **Separate Loose Parts**: Split disconnected mesh components\n\n### Bone Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface6.png[/image]\nArmature manipulation:\n- **Create Digitigrade**: Convert standard legs to digitigrade setup\n- **Weight Tools**: Clean up weight painting and bone constraints\n- **Merge Twist Bones**: Option to combine twist bone weights\n\n### Merge Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface7.png[/image]\nBone merging options:\n- **Merge to Active**: Combine selected bones into active bone\n- **Merge to Parent**: Merge bones with their parents\n- **Connect Bones**: Create connections between bones\n\n### Additional Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface8.png[/image]\nExtra utilities:\n- **Apply Transforms**: Apply object transformations\n- **Clean Shape Keys**: Remove unused shape keys\n\n[note]Many tools require a valid armature selection and specific Blender modes (Edit, Pose, or Object mode).[/note]",
-            "keywords": ["interface", "tools", "panel", "bones", "weights", "separation", "merge", "digitigrade", "shape keys"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-12-06",
+            "answer": "The Tools Panel offers a comprehensive set of utilities for avatar customization and optimization. Here's a breakdown of each section:\n\n### General Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface4.png[/image]\nBasic utilities:\n- **Convert to Resonite**: Export your avatar in Resonite-compatible format\n\n### Separation Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface5.png[/image]\nMesh separation utilities:\n- **Separate by Materials**: Split mesh based on material assignments\n- **Separate Loose Parts**: Split disconnected mesh components\n\n### Bone Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface6.png[/image]\nArmature manipulation:\n- **Create Digitigrade**: Convert standard legs to digitigrade setup\n- **Weight Tools**: Clean up weight painting and bone constraints\n- **Merge Twist Bones**: Option to combine twist bone weights\n\n### Standardization Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/standardize.jpg[/image]\nArmature standardization:\n- **Standardize Armature**: Convert non-standard armatures to follow standard naming conventions\n\n### Merge Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface7.png[/image]\nBone merging options:\n- **Merge to Active**: Combine selected bones into active bone\n- **Merge to Parent**: Merge bones with their parents\n- **Connect Bones**: Create connections between bones\n\n### Additional Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/interface8.png[/image]\nExtra utilities:\n- **Apply Transforms**: Apply object transformations\n- **Clean Shape Keys**: Remove unused shape keys\n\n### Rigify Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/rigify.jpg[/image]\nRigify conversion utilities:\n- **Convert Rigify to Unity**: Transform Rigify rigs into Unity-compatible armatures\n- **Merge Twist Bones**: Option to combine twist bones during conversion\n\n[note]Many tools require a valid armature selection and specific Blender modes (Edit, Pose, or Object mode).[/note]",
+            "keywords": ["interface", "tools", "panel", "bones", "weights", "separation", "merge", "digitigrade", "shape keys", "standardize", "rigify"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
             "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added documentation for Standardization Tools and Rigify Tools sections"
+                },
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
                     "changes": "Initial documentation of Tools Panel interface"
                 }
             ]
-        },
+        },        
         {
             "id": 7,
             "category": "Getting Started",
