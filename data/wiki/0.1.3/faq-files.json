@@ -1,0 +1,16 @@
+{
+    "faqFiles": [
+        "requirements",
+        "installation",
+        "basic-setup",
+        "interface",
+        "quick-access-functions",
+        "optimization-functions",
+        "tools-functions",
+        "custom-avatar-functions",
+        "viseme-functions",
+        "eye-tracking-functions",
+        "supported-formats",
+        "policies"
+    ]
+}

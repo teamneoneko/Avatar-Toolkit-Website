@@ -1,14 +1,14 @@
 {
   "version": "Blender 4.3.0",
-  "latestVersion": "0.1.1 Alpha 1",
-  "releaseDate": "2024-12-19",
-  "eolDate": "When Alpha 2 releases",
+  "latestVersion": "0.1.3 Alpha 1",
+  "releaseDate": "2025-03-25",
+  "eolDate": "2025=03=25",
   "developmentStatus": "alpha",
   "archiveLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.3/",
-  "description": "<div class='highlight-warning'>Avatar Toolkit is currently in ALPHA. Expect bugs and issues during this early development phase.</div><br><div class='highlight-warning'>Having trouble installing? Check our installation guide: <a href='https://avatartoolkit.xyz/wiki.html?#how-to-install-avatar-toolkit'>Installation Guide</a></div><br><div class='highlight-info'>This first release includes essential features for avatar creation:<br>• Basic Armature Validation System<br>• Comprehensive Import Support<br>• Full Pose Mode Features<br>• FBX and Resonite Export Options<br>• Optimization Tools Suite<br>• Custom Avatar Tools<br>• Viseme Creation<br>• Eye Tracking Support (Legacy and VRChat SDK3)<br>• Built-in Updater<br>• Debug Options</div><br><div class='highlight-note'>Avatar Toolkit includes an armature validation system. Some tools require either a standard armature or validation to be disabled. Learn more about configuration here: <a href='https://avatartoolkit.xyz/wiki.html?#configuring-avatar-toolkit-settings'>Configuration Guide</a></div>",
+  "description": "<div class='highlight-warning'>Avatar Toolkit is currently in ALPHA. Expect bugs and issues during this early development phase.</div><br><div class='highlight-warning'>Having trouble installing? Check our installation guide: <a href='https://avatartoolkit.xyz/wiki.html?version=0.1.3#how-to-install-avatar-toolkit'>Installation Guide</a></div><br><div class='highlight-info'>This first release includes essential features for avatar creation:<br>• Basic Armature Validation System<br>• Comprehensive Import Support<br>• Full Pose Mode Features<br>• FBX and Resonite Export Options<br>• Optimization Tools Suite<br>• Custom Avatar Tools<br>• Viseme Creation<br>• Eye Tracking Support (Legacy and VRChat SDK3)<br>• Built-in Updater<br>• Debug Options</div><br><div class='highlight-note'>Avatar Toolkit includes an armature validation system. Some tools require either a standard armature or validation to be disabled. Learn more about configuration here: <a href='https://avatartoolkit.xyz/wiki.html?version=0.1.3#configuring-avatar-toolkit-settings'>Configuration Guide</a></div>",
   "unofficial": {
-    "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.1.1",
-    "downloadLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.3/Avatar-Toolkit-Alpha0.1.1.zip",
+    "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.1.3",
+    "downloadLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.3/Avatar-Toolkit-Alpha0.1.3.zip",
     "wikiLink": "wiki.html",
     "discordLink": "https://discord.neoneko.xyz/",
     "issueLink": "https://github.com/teamneoneko/Avatar-Toolkit/issues/65"

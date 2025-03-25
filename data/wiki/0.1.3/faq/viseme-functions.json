@@ -1,0 +1,38 @@
+{
+    "faqs": [
+        {
+            "id": 400,
+            "category": "Advanced Documentation",
+            "subcategory": "Viseme Functions",
+            "question": "How does the Viseme Creation System work?",
+            "answer": "The viseme creation system generates a complete set of mouth shapes for speech animation:\n\n### Shape Key Requirements\n- **Mouth A**: Primary open mouth shape\n- **Mouth O**: Rounded mouth shape\n- **Mouth CH**: Compressed mouth shape\n\n### Generation Process\nThe system creates 15 standard visemes through precise shape key mixing:\n\n**Primary Shapes:**\n- vrc.v_aa: Uses Mouth A (99.98%)\n- vrc.v_ch: Uses Mouth CH (99.96%)\n- vrc.v_ou: Uses Mouth O (99.94%)\n\n**Combined Shapes:**\n- vrc.v_dd: A(30%) + CH(70%)\n- vrc.v_ih: CH(70%) + O(30%)\n- vrc.v_ff: A(20%) + CH(40%)\n- vrc.v_e: A(50%) + CH(20%)\n- vrc.v_kk: A(70%) + CH(40%)\n- vrc.v_nn: A(20%) + CH(70%)\n- vrc.v_oh: A(20%) + O(80%)\n- vrc.v_pp: Subtle A and O mix\n- vrc.v_rr: CH(50%) + O(30%)\n- vrc.v_sil: Neutral position\n- vrc.v_ss: CH(80%)\n- vrc.v_th: A(40%) + O(15%)\n\n### Technical Features\n- Smart shape key validation\n- Automatic deformation checking\n- Performance-optimized caching\n- Precise weight preservation\n- Conflict-free naming system\n\n[info]The system uses carefully calibrated mixing ratios to ensure natural-looking speech animation.[/info]\n\n[note]Shape keys are temporarily renamed during processing to maintain data integrity.[/note]",
+            "keywords": ["visemes", "shape keys", "mouth shapes", "speech", "animation", "mixing"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Viseme Functions"
+                }
+            ]
+        },
+        {
+            "id": 401,
+            "category": "Advanced Documentation",
+            "subcategory": "Viseme Functions",
+            "question": "How does the Viseme Preview System work?",
+            "answer": "The viseme preview system enables real-time testing of all mouth shapes:\n\n### Preview Controls\n- Shape Intensity Slider: Fine-tune the strength of each viseme\n- Viseme Selection: Quick switching between shapes\n- Live Updates: Instant visual feedback\n\n### Preview Features\n**Non-destructive Testing:**\n- Original shape key values are preserved\n- Temporary preview state\n- Instant reset capability\n\n**Performance Optimization:**\n- Cached shape data\n- Efficient value updates\n- Memory-conscious design\n\n### Technical Implementation\n- Smart cache system for quick switching\n- Original value preservation\n- Automatic cleanup on exit\n- Real-time shape mixing\n- Safe state restoration\n\n[warning]While preview mode is active, avoid making other shape key modifications.[/warning]\n\n[info]Use the preview system to verify all viseme shapes before finalizing them.[/info]",
+            "keywords": ["visemes", "preview", "testing", "shapes", "real-time", "non-destructive"],
+            "version": "0.1.0",
+            "lastUpdated": "2024-12-06",
+            "history": [
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Viseme Functions"
+                }
+            ]
+        }
+    ]
+}
