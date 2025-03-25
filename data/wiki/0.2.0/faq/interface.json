@@ -145,6 +145,40 @@
                     "changes": "Initial documentation of Updater Panel interface"
                 }
             ]
+        },
+        {
+            "id": 12,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Texture Atlas Panel?",
+            "answer": "The Texture Atlas Panel provides tools for combining multiple textures into a single atlas texture, optimizing your avatar's performance:\n\n### Material Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas1.png[/image]\nSelect materials to include in the atlas:\n- Reload/Load Material List button\n- Material selection checkboxes\n- Expand/Collapse material details\n- Search filter for large material lists\n- Estimated atlas size calculation\n\n### Material Configuration\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas2.png[/image]\nConfigure texture maps for each material:\n- Albedo (Diffuse) texture\n- Normal map\n- Emission map\n- Ambient Occlusion map\n- Height map\n- Roughness map\n\n### Atlas Creation\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas3.png[/image]\nGenerate the texture atlas with one click:\n- Atlas Materials button\n\n[note]The Texture Atlas Panel requires a valid armature to be selected and materials with textures to function properly.[/note]",
+            "keywords": ["interface", "texture atlas", "panel", "materials", "textures", "optimization"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-02-15",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-02-15",
+                    "changes": "Initial documentation of Texture Atlas Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the UV Tools Panel?",
+            "answer": "The UV Tools Panel is available in the Image Editor and provides specialized tools for UV manipulation:\n\n### UV Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/uv-tools/uv-tools1.png[/image]\nSpecialized UV editing tools:\n- **Align UV Edges to Target**: Aligns selected UV edges to a target edge for precise UV mapping\n\n[note]The UV Tools Panel is only available in the Image Editor's sidebar under the 'Avatar Toolkit' tab.[/note]",
+            "keywords": ["interface", "uv tools", "panel", "image editor", "uv mapping", "align edges"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-02-15",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-02-15",
+                    "changes": "Initial documentation of UV Tools Panel interface"
+                }
+            ]
         }
     ]
 }
