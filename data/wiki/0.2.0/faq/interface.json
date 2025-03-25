@@ -5,11 +5,16 @@
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Quick Access Panel?",
-            "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of three main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess1.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess2.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess3.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports multiple formats) [View supported formats](https://avatartoolkit.xyz/wiki.html?version=0.1.2#what-file-formats-are-supported-by-the-avatar-toolkit)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status and current Blender mode (Object or Pose mode).[/note]",
-            "keywords": ["interface", "quick access", "panel", "armature", "pose", "import", "export", "controls"],
-            "version": "0.1.2",
-            "lastUpdated": "2025-01-26",
+            "answer": "The Quick Access Panel is your primary control center for Avatar Toolkit, providing essential tools and information at a glance. It consists of several main sections:\n\n### Armature Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess1.png[/image]\nSelect and validate your armature from the dropdown menu. The panel shows validation status and bone count for the selected armature.\n\n### Enhanced Validation Display\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccessValidation.png[/image]\nDetailed validation information with collapsible sections:\n- Found Bones: Lists detected bones in your armature\n- Non-Standard Bones: Highlights bones that don't follow naming conventions\n- Hierarchy Issues: Shows parent-child relationship problems\n- Scale Issues: Identifies scale-related problems\n\n### T-Pose Validation\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccessTPose.png[/image]\nVerify if your avatar is in a proper T-pose:\n- Validate T-Pose button\n- Detailed feedback on arm and leg positioning\n- Visual indicators for correct/incorrect positioning\n\n### Pose Controls\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess2.png[/image]\nManage pose-related operations:\n- Start/Stop Pose Mode\n- Apply Pose as Rest Position\n- Create Pose Shape Keys\n\n### Import/Export\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/quick-access/QuickAccess3.png[/image]\nQuick access to import and export functions:\n- Import avatars (supports multiple formats) [View supported formats](https://avatartoolkit.xyz/wiki.html?version=0.1.2#what-file-formats-are-supported-by-the-avatar-toolkit)\n- Export menu with multiple format options\n\n[note]The Quick Access Panel adapts its display based on your selected armature's validation status, validation mode settings, and current Blender mode (Object or Pose mode). Different validation modes (Strict, Basic, None) will show different warning levels.[/note]",
+            "keywords": ["interface", "quick access", "panel", "armature", "pose", "import", "export", "controls", "validation", "t-pose"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
             "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added documentation for enhanced validation display, T-pose validation, and validation mode warnings"
+                },
                 {
                     "version": "0.1.2",
                     "date": "2025-01-26",
@@ -21,7 +26,7 @@
                     "changes": "Initial documentation of Quick Access Panel interface"
                 }
             ]
-        },
+        },        
         {
             "id": 5,
             "category": "Getting Started",
@@ -143,6 +148,40 @@
                     "version": "0.1.0",
                     "date": "2024-12-06",
                     "changes": "Initial documentation of Updater Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the Texture Atlas Panel?",
+            "answer": "The Texture Atlas Panel provides tools for combining multiple textures into a single atlas texture, optimizing your avatar's performance:\n\n### Material Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas1.png[/image]\nSelect materials to include in the atlas:\n- Reload/Load Material List button\n- Material selection checkboxes\n- Expand/Collapse material details\n- Search filter for large material lists\n- Estimated atlas size calculation\n\n### Material Configuration\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas2.png[/image]\nConfigure texture maps for each material:\n- Albedo (Diffuse) texture\n- Normal map\n- Emission map\n- Ambient Occlusion map\n- Height map\n- Roughness map\n\n### Atlas Creation\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/texture-atlas/texture-atlas3.png[/image]\nGenerate the texture atlas with one click:\n- Atlas Materials button\n\n[note]The Texture Atlas Panel requires a valid armature to be selected and materials with textures to function properly.[/note]",
+            "keywords": ["interface", "texture atlas", "panel", "materials", "textures", "optimization"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Texture Atlas Panel interface"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "category": "Getting Started",
+            "subcategory": "Interface Overview",
+            "question": "What is the UV Tools Panel?",
+            "answer": "The UV Tools Panel is available in the Image Editor and provides specialized tools for UV manipulation:\n\n### UV Tools\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/uv-tools/uv-tools1.png[/image]\nSpecialized UV editing tools:\n- **Align UV Edges to Target**: Aligns selected UV edges to a target edge for precise UV mapping\n\n[note]The UV Tools Panel is only available in the Image Editor's sidebar under the 'Avatar Toolkit' tab.[/note]",
+            "keywords": ["interface", "uv tools", "panel", "image editor", "uv mapping", "align edges"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of UV Tools Panel interface"
                 }
             ]
         }
