@@ -1,0 +1,55 @@
+{
+    "faqs": [
+        {
+            "id": 600,
+            "category": "Advanced Documentation",
+            "subcategory": "Texture Atlas Functions",
+            "question": "How does the Texture Atlas System work?",
+            "answer": "The Texture Atlas System combines multiple textures into a single optimized atlas, improving performance and reducing draw calls:\n\n### Material Selection Process\n- Scans all materials in the scene\n- Allows selective inclusion of materials\n- Provides search filtering for large material lists\n- Shows estimated atlas size based on selected textures\n\n### Texture Map Management\n**Supported Texture Types:**\n- Albedo (Diffuse): Main color texture\n- Normal: Surface detail mapping\n- Emission: Self-illumination mapping\n- Ambient Occlusion: Shadow detail\n- Height: Displacement mapping\n- Roughness: Surface smoothness/reflectivity\n\n**Texture Handling:**\n- Automatically scales textures to consistent sizes\n- Creates placeholder textures for missing maps\n- Preserves alpha channels\n- Maintains texture quality\n\n### Atlas Generation\n**Technical Process:**\n- Uses bin packing algorithm for optimal texture arrangement\n- Calculates efficient layout to minimize wasted space\n- Remaps UV coordinates for all affected meshes\n- Creates new combined textures for each map type\n- Generates optimized material with proper node setup\n\n**UV Remapping:**\n- Automatically adjusts UV coordinates for all meshes\n- Preserves relative texture positions\n- Maintains proper texel density\n- Handles multiple UV layers\n\n### Performance Benefits\n- Reduces draw calls significantly\n- Decreases material count\n- Optimizes texture memory usage\n- Improves rendering performance\n- Simplifies material management\n\n[warning]Creating a texture atlas is a significant modification to your avatar's materials. Always make a backup before proceeding.[/warning]\n\n[info]For best results, ensure your textures have consistent resolutions and aspect ratios before creating an atlas.[/info]\n\n[note]The system automatically saves generated atlas textures to your project folder, making them easily accessible for external editing if needed.[/note]",
+            "keywords": ["texture atlas", "materials", "optimization", "UV mapping", "performance"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Texture Atlas System"
+                }
+            ]
+        },
+        {
+            "id": 601,
+            "category": "Advanced Documentation",
+            "subcategory": "Texture Atlas Functions",
+            "question": "How does the Texture Atlas Material Configuration work?",
+            "answer": "The Texture Atlas Material Configuration provides detailed control over how materials are combined into the atlas:\n\n### Material Selection Interface\n**Selection Controls:**\n- Checkbox toggles for each material\n- Expand/collapse material details\n- Select All/None buttons for quick management\n- Search filtering for large material lists\n- Estimated atlas size calculation\n\n### Texture Map Assignment\n**Per-Material Configuration:**\n- Individual texture selection for each map type\n- Visual indicators for assigned/missing textures\n- Automatic detection of existing texture maps\n- Preview of texture assignments\n\n**Texture Types:**\n- **Albedo**: Main color and transparency information\n- **Normal**: Surface detail and lighting information\n- **Emission**: Self-illumination and glow effects\n- **Ambient Occlusion**: Shadow and crevice darkening\n- **Height**: Surface displacement information\n- **Roughness**: Surface smoothness and specular control\n\n### Default Texture Handling\n**Automatic Placeholder Generation:**\n- Black (0,0,0,1) for missing albedo textures\n- Blue normal (0.5,0.5,1.0,1.0) for missing normal maps\n- Black (0,0,0,1) for missing emission textures\n- White (1,1,1,1) for missing ambient occlusion\n- Mid-gray (0.5,0.5,0.5,1.0) for missing height maps\n- White (1,1,1,0) for missing roughness maps\n\n### Technical Implementation\n- Non-destructive texture assignment\n- Original material preservation\n- Intelligent texture detection\n- Memory-efficient placeholder generation\n- Progressive texture processing\n\n[info]You can include materials with missing texture maps - the system will automatically generate appropriate placeholder textures.[/info]\n\n[note]For materials with procedural textures or shader effects, you may need to bake those effects to image textures before including them in the atlas.[/note]",
+            "keywords": ["texture atlas", "material configuration", "texture maps", "placeholders", "selection"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Texture Atlas Material Configuration"
+                }
+            ]
+        },
+        {
+            "id": 602,
+            "category": "Advanced Documentation",
+            "subcategory": "Texture Atlas Functions",
+            "question": "What are the best practices for using the Texture Atlas System?",
+            "answer": "Follow these best practices to get optimal results from the Texture Atlas System:\n\n### Preparation\n**Texture Optimization:**\n- Use consistent texture resolutions when possible\n- Ensure power-of-two dimensions (512, 1024, 2048, etc.)\n- Compress textures appropriately before atlasing\n- Remove unused texture data\n\n**Material Organization:**\n- Group similar materials before atlasing\n- Consider creating multiple atlases for different material types\n- Clean up unused materials before processing\n- Ensure UV maps are properly unwrapped\n\n### Selection Strategy\n**When to Include Materials:**\n- Materials that share similar textures\n- Materials on the same mesh or connected meshes\n- Materials with similar shader requirements\n- Materials with consistent texture resolutions\n\n**When to Exclude Materials:**\n- Unique materials used only once\n- Materials with complex shader effects\n- Materials that need frequent updates\n- Materials with dramatically different resolutions\n\n### Performance Considerations\n**Atlas Size Management:**\n- Keep atlas size under 4096×4096 for best compatibility\n- Consider multiple smaller atlases instead of one large atlas\n- Balance between atlas count and texture quality\n- Monitor estimated atlas size during selection\n\n**UV Density:**\n- Ensure consistent texel density across materials\n- Avoid extreme UV scaling differences\n- Check for UV overlaps before atlasing\n- Consider re-unwrapping problematic UVs\n\n### Post-Atlas Workflow\n**Quality Checks:**\n- Inspect the generated atlas textures\n- Verify UV mapping on all affected meshes\n- Check for seams or artifacts\n- Test in different lighting conditions\n\n**Optimization:**\n- Compress the final atlas textures\n- Remove original textures if no longer needed\n- Consider baking lighting information\n- Adjust material settings for optimal rendering\n\n[info]For avatars with many materials, creating 2-3 specialized atlases (e.g., body, clothing, accessories) often yields better results than a single large atlas.[/info]\n\n[warning]Very large atlas textures (>4096×4096) may cause performance issues on some platforms or devices.[/warning]\n\n[note]After creating an atlas, you can still edit the generated textures in external programs to make adjustments or optimizations.[/note]",
+            "keywords": ["texture atlas", "best practices", "optimization", "performance", "workflow"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Texture Atlas best practices"
+                }
+            ]
+        }
+    ]
+}
