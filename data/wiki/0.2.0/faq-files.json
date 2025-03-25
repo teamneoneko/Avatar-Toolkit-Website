@@ -10,6 +10,7 @@
         "custom-avatar-functions",
         "viseme-functions",
         "eye-tracking-functions",
+        "texture-atlas-functions",
         "supported-formats",
         "policies"
     ]

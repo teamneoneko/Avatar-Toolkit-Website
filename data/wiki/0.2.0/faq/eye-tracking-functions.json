@@ -5,11 +5,16 @@
             "category": "Advanced Documentation",
             "subcategory": "Eye Tracking Functions",
             "question": "How does the Eye Tracking Creation System work?",
-            "answer": "The eye tracking system supports both VRChat SDK2 and Avatar 3.0 setups with comprehensive bone and shape key management:\n\n### SDK2 Setup Process\n**Bone Configuration:**\n- Creates standardized LeftEye and RightEye bones\n- Calculates optimal bone positions from mesh geometry\n- Sets up proper bone orientations and roll angles\n- Maintains parent relationships with head bone\n\n**Shape Key Setup:**\n- Configures blink shapes (vrc.blink_left, vrc.blink_right)\n- Sets up lowerlid movement (vrc.lowerlid_left, vrc.lowerlid_right)\n- Handles weight transfers and vertex groups\n- Preserves original shape key data\n\n### Avatar 3.0 Setup\n**Bone Optimization:**\n- Implements straight-up orientation matrix\n- Preserves original bone positions\n- Maintains proper scaling\n- Handles parent relationships\n\n### Technical Features\n- Smart vertex group management\n- Automatic weight transfer\n- Position caching system\n- Transform validation\n- Cleanup automation\n\n[info]The system automatically handles complex eye setups while maintaining proper deformation.[/info]\n\n[note]Eye bones are precisely positioned based on mesh vertex groups for optimal tracking.[/note]",
-            "keywords": ["eye tracking", "bones", "shape keys", "SDK2", "Avatar 3.0", "setup"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-12-06",
+            "answer": "The eye tracking system supports both Legacy and Avatar 3.0 setups with comprehensive bone and shape key management:\n\n### Legacy Setup Process\n**Bone Configuration:**\n- Creates standardized LeftEye and RightEye bones\n- Calculates optimal bone positions from mesh geometry\n- Sets up proper bone orientations and roll angles\n- Maintains parent relationships with head bone\n\n**Shape Key Setup:**\n- Configures blink shapes (vrc.blink_left, vrc.blink_right)\n- Sets up lowerlid movement (vrc.lowerlid_left, vrc.lowerlid_right)\n- Handles weight transfers and vertex groups\n- Preserves original shape key data\n\n### Avatar 3.0 Setup\n**Bone Optimization:**\n- Implements straight-up orientation matrix\n- Preserves original bone positions\n- Maintains proper scaling\n- Handles parent relationships\n\n### Technical Features\n- Smart vertex group management\n- Automatic weight transfer\n- Position caching system\n- Transform validation\n- Cleanup automation\n\n[info]The system automatically handles complex eye setups while maintaining proper deformation.[/info]\n\n[note]Eye bones are precisely positioned based on mesh vertex groups for optimal tracking.[/note]\n\n[warning]The Legacy tracking system (formerly known as VRChat SDK2) should not be used for VRChat avatars anymore, as VRChat eye tracking is now configured directly in Unity. This function remains available for other platforms like ChilloutVR that still support this method of eye tracking setup.[/warning]",
+            "keywords": ["eye tracking", "bones", "shape keys", "Legacy", "Avatar 3.0", "setup"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
             "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Updated terminology from 'SDK2' to 'Legacy' and added clarification about platform usage"
+                },
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
@@ -22,11 +27,16 @@
             "category": "Advanced Documentation",
             "subcategory": "Eye Tracking Functions",
             "question": "How does the Eye Tracking Testing System work?",
-            "answer": "The testing system provides comprehensive tools for validating eye tracking setup:\n\n### Rotation Testing\n**Controls:**\n- X-axis rotation: Up/down eye movement\n- Y-axis rotation: Left/right eye movement\n- Reset functionality\n- Live preview updates\n\n### Blinking System\n**Test Features:**\n- Full blink testing\n- Lowerlid movement\n- Adjustable shape intensities\n- Real-time preview\n\n### Technical Implementation\n**Eye Movement:**\n- Precise rotation calculations\n- Transform preservation\n- Parent bone relationships\n- Weight distribution checks\n\n**Shape Key Management:**\n- Non-destructive testing\n- Original value preservation\n- Smart cache system\n- Clean state restoration\n\n[warning]Always test eye tracking in both SDK2 and Avatar 3.0 modes if targeting both platforms.[/warning]\n\n[info]The testing system allows for comprehensive validation of all eye movements and expressions.[/info]",
+            "answer": "The testing system provides comprehensive tools for validating eye tracking setup:\n\n### Rotation Testing\n**Controls:**\n- X-axis rotation: Up/down eye movement\n- Y-axis rotation: Left/right eye movement\n- Reset functionality\n- Live preview updates\n\n### Blinking System\n**Test Features:**\n- Full blink testing\n- Lowerlid movement\n- Adjustable shape intensities\n- Real-time preview\n\n### Technical Implementation\n**Eye Movement:**\n- Precise rotation calculations\n- Transform preservation\n- Parent bone relationships\n- Weight distribution checks\n\n**Shape Key Management:**\n- Non-destructive testing\n- Original value preservation\n- Smart cache system\n- Clean state restoration\n\n[warning]Always test eye tracking in both Legacy and Avatar 3.0 modes if targeting multiple platforms.[/warning]\n\n[info]The testing system allows for comprehensive validation of all eye movements and expressions.[/info]\n\n[note]The Legacy testing system (formerly known as VRChat SDK2) is still valuable for platforms like ChilloutVR, but VRChat users should configure eye tracking directly in Unity.[/note]",
             "keywords": ["eye tracking", "testing", "rotation", "blinking", "preview"],
-            "version": "0.1.0",
-            "lastUpdated": "2024-12-06",
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
             "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Updated terminology from 'SDK2' to 'Legacy' and added clarification about platform usage"
+                },
                 {
                     "version": "0.1.0",
                     "date": "2024-12-06",
