@@ -110,16 +110,11 @@
             "category": "Getting Started",
             "subcategory": "Interface Overview",
             "question": "What is the Eye Tracking Panel?",
-            "answer": "The Eye Tracking Panel provides comprehensive tools for setting up and testing eye tracking on your avatar. It supports both Legacy and AV3 setups:\n\n### Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.1/interface/atlasJPG.JPG[/image]\nChoose between:\n- Legacy: Full eye tracking setup with blinking\n- AV3: Basic eye tracking bone setup\n\n### Legacy Creation Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/eyetracking/legacytracking.JPG[/image]\nComplete setup options:\n- Bone Setup (Head, Left Eye, Right Eye)\n- Mesh Selection\n- Shape Key Configuration (Wink, Lowerlid)\n- Advanced Options (Blinking, Movement, Distance)\n\n### Legacy Testing Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/eyetracking/legacytesting.JPG[/image]\nComprehensive testing tools:\n- Eye Rotation Controls (X/Y axis)\n- Distance Adjustment\n- Blink Testing\n- Lowerlid Movement Testing\n\n### AV3 Setup\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eyetracking/eyetracking4.png[/image]\nSimplified bone setup:\n- Head Bone Selection\n- Eye Bone Selection\n- Quick Setup Button\n\n[note]All eye tracking features require a valid armature with properly named bones.[/note]",
+            "answer": "The Eye Tracking Panel provides comprehensive tools for setting up and testing eye tracking on your avatar. It supports both Legacy and AV3 setups:\n\n### Version Selection\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/eyetracking/eyetrackingbuttons.JPG[/image]\nChoose between:\n- Legacy: Full eye tracking setup with blinking\n- AV3: Basic eye tracking bone setup\n\n### Legacy Creation Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/eyetracking/legacytracking.JPG[/image]\nComplete setup options:\n- Bone Setup (Head, Left Eye, Right Eye)\n- Mesh Selection\n- Shape Key Configuration (Wink, Lowerlid)\n- Advanced Options (Blinking, Movement, Distance)\n\n### Legacy Testing Mode\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/interface/0.2.0/eyetracking/legacytesting.JPG[/image]\nComprehensive testing tools:\n- Eye Rotation Controls (X/Y axis)\n- Distance Adjustment\n- Blink Testing\n- Lowerlid Movement Testing\n\n### AV3 Setup\n[image:800:400]https://cdn.neoneko.xyz/avatartoolkit/wiki/eyetracking/eyetracking4.png[/image]\nSimplified bone setup:\n- Head Bone Selection\n- Eye Bone Selection\n- Quick Setup Button\n\n[note]All eye tracking features require a valid armature with properly named bones.[/note]",
             "keywords": ["interface", "eye tracking", "panel", "Legacy", "AV3", "bones", "shape keys", "testing"],
             "version": "0.2.0",
             "lastUpdated": "2025-03-25",
             "history": [
-                {
-                    "version": "0.2.1",
-                    "date": "2025-03-31",
-                    "changes": "Updated main image"
-                },
                 {
                     "version": "0.2.0",
                     "date": "2025-03-25",
