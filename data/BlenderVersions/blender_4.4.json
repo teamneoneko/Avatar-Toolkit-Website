@@ -1,15 +1,15 @@
 {
   "version": "Blender 4.4.0",
-  "latestVersion": "0.2.0 Alpha 2",
-  "releaseDate": "2025-03-25",
+  "latestVersion": "0.2.1 Alpha 2",
+  "releaseDate": "2025-04-02",
   "eolDate": "When Alpha 3 comes out",
   "developmentStatus": "alpha",
   "archiveLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.4/",
   "description": "<div class='highlight-warning'>Avatar Toolkit is currently in ALPHA. Expect bugs and issues during this early development phase.</div><br><div class='highlight-warning'>Having trouble installing? Check our installation guide: <a href='https://avatartoolkit.xyz/wiki.html?version=0.2.0#how-to-install-avatar-toolkit'>Installation Guide</a></div><br><div class='highlight-info'>Alpha 2 includes essential features for avatar creation:<br>• More Advanced Armature Validation System<br>• Comprehensive Import Support<br>• Standarise bones system<br>• Rigify to Unity system<br>• Full Pose Mode Features<br>• FBX and Resonite Export Options<br>• Optimization Tools Suite<br>• Custom Avatar Tools<br>• Viseme Creation<br>• Atlas Textureing system<br>• Eye Tracking Support (Legacy and VRChat SDK3)<br>• Built-in Updater<br>• Debug Options</div><br><div class='highlight-note'>Avatar Toolkit includes an armature validation system. Some tools require either a standard armature or validation to be disabled. Learn more about configuration here: <a href='https://avatartoolkit.xyz/wiki.html?version=0.2.0#configuring-avatar-toolkit-settings'>Configuration Guide</a></div>",
   "unofficial": {
-    "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.2.0",
-    "downloadLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.4/Avatar-Toolkit-Alpha0.2.0.zip",
-    "wikiLink": "wiki.html?version=0.2.0",
+    "githubLink": "https://github.com/teamneoneko/Avatar-Toolkit/releases/tag/0.2.1",
+    "downloadLink": "https://cdn.neoneko.xyz/avatartoolkit/archive/blender4.4/Avatar-Toolkit-Alpha0.2.1.zip",
+    "wikiLink": "wiki.html?version=0.2.1",
     "discordLink": "https://discord.neoneko.xyz/",
     "issueLink": "https://github.com/teamneoneko/Avatar-Toolkit/issues/65"
   }
