@@ -1,0 +1,165 @@
+{
+    "faqs": [
+        {
+            "id": 300,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How does the Resonite Conversion System work?",
+            "answer": "The Resonite conversion system prepares your avatar for the Resonite platform:\n\n### Bone Name Conversion\n- Automatically translates bone names to Resonite format\n- Handles multiple naming conventions\n- Adds necessary IK markers\n- Preserves special bone functions\n\n### Optimization Process\n- Marks non-IK bones appropriately with '<noik>' tag\n- Maintains bone hierarchies\n- Preserves weight assignments\n- Handles twist bone configurations\n\n### Special Handling\n- Processes symmetrical bones\n- Manages expression bones\n- Handles physics bones\n- Preserves animation data\n\n### Progress Tracking\n- Shows real-time conversion progress\n- Reports untranslated bones\n- Provides detailed feedback\n\n[info]Bones marked with '<noik>' indicate they won't participate in IK calculations.[/info]\n\n[note]This conversion ensures compatibility while maintaining avatar functionality.[/note]",
+            "keywords": ["resonite", "conversion", "bones", "ik", "compatibility"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added progress tracking and improved bone handling"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of Resonite conversion system"
+                }
+            ]
+        },
+        {
+            "id": 301,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Bone Management Tools work?",
+            "answer": "The bone management tools provide comprehensive control over your avatar's skeleton:\n\n### Digitigrade Setup\n- Converts standard legs to digitigrade configuration\n- Creates proper bone chains\n- Maintains weight distributions\n- Preserves IK functionality\n- Includes progress tracking for complex operations\n\n### Weight Cleanup\n- Removes zero-weight bones\n- Cleans unused vertex groups\n- Preserves important bones based on configurable options\n- Maintains twist bone functionality\n- Offers list-only mode to preview changes\n- Allows selective bone removal\n\n### Constraint Management\n- Removes unnecessary constraints\n- Cleans up bone relationships\n- Optimizes IK chains\n- Preserves essential constraints\n- Reports number of constraints removed\n\n[warning]Creating digitigrade legs will modify your avatar's bone structure. Make a backup before proceeding.[/warning]\n\n[note]These tools help optimize your avatar's performance while maintaining functionality.[/note]",
+            "keywords": ["bones", "weights", "constraints", "digitigrade", "cleanup"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added list-only mode for weight cleanup and progress tracking for digitigrade setup"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of bone management tools"
+                }
+            ]
+        },
+        {
+            "id": 302,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Mesh Separation Tools work?",
+            "answer": "The mesh separation tools help organize and optimize your avatar's meshes:\n\n### Material Separation\n- Splits meshes by material assignments\n- Preserves UV mappings\n- Maintains vertex groups\n- Keeps shape keys intact\n- Optimizes material usage\n\n### Loose Parts Separation\n- Identifies disconnected mesh segments\n- Creates individual mesh objects\n- Preserves material assignments\n- Maintains armature relationships\n- Keeps vertex weights\n\n[info]Separating meshes can help with organization and specific platform optimizations.[/info]\n\n[note]Separated meshes maintain their original properties and can be rejoined later if needed.[/note]",
+            "keywords": ["mesh", "separation", "materials", "loose parts", "organization"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Updated with improved validation and error handling"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of mesh separation tools"
+                }
+            ]
+        },
+        {
+            "id": 303,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Bone Merging Tools work?",
+            "answer": "The bone merging tools offer various ways to combine and optimize bones:\n\n### Merge to Active\n- Combines selected bones into active bone\n- Transfers vertex weights\n- Updates bone constraints\n- Preserves deformations\n- Maintains shape keys\n- Configurable weight threshold\n\n### Merge to Parent\n- Merges bones with their parents\n- Transfers child bone weights\n- Updates bone hierarchies\n- Preserves animations\n- Maintains mesh deformations\n- Configurable weight threshold\n\n### Connect Bones\n- Links disconnected bones\n- Fixes bone chains\n- Maintains proper scaling\n- Preserves bone roll\n- Updates bone relationships\n- Configurable minimum distance threshold\n- Excludes specific bones (eyes, head, hips)\n\n[warning]Bone merging operations are permanent and can affect animations. Always make a backup before proceeding.[/warning]\n\n[note]These tools are useful for optimizing complex armatures while maintaining functionality.[/note]",
+            "keywords": ["bones", "merging", "weights", "optimization", "hierarchy"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added configurable thresholds and improved bone exclusion options"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of bone merging tools"
+                }
+            ]
+        },
+        {
+            "id": 304,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How do the Additional Tools work?",
+            "answer": "The additional tools provide essential utilities for avatar optimization:\n\n### Apply Transforms\n- Applies all transformations to armature and meshes\n- Resets transformation values\n- Preserves visual appearance\n- Updates mesh coordinates\n- Maintains bone relationships\n\n### Clean Shape Keys\n- Removes unused shape keys\n- Identifies duplicate shapes\n- Preserves category markers\n- Maintains blend shapes\n- Optimizes memory usage\n\n### Tolerance Control\n- Customizable cleanup threshold\n- Precise shape key comparison\n- Prevents accidental removal\n- Maintains subtle expressions\n\n[info]Regular cleanup of shape keys can significantly improve avatar performance.[/info]\n\n[note]These tools help maintain a clean and efficient avatar setup.[/note]",
+            "keywords": ["transforms", "shape keys", "cleanup", "optimization", "maintenance"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Updated with improved validation and error handling"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of additional tools"
+                }
+            ]
+        },
+        {
+            "id": 305,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How does the UV Alignment Tool work?",
+            "answer": "The UV Alignment Tool helps create clean, precise UV maps by aligning UV edges:\n\n### Edge Alignment\n- Aligns selected UV edges to a target edge\n- Maintains proper texturing\n- Preserves UV island structure\n- Works across multiple objects\n\n### Selection Process\n1. Select the target object (which contains the edge you want to align to)\n2. Select additional objects with edges to be aligned\n3. In UV editor, select the edges to align\n4. Run the alignment tool\n\n### Technical Features\n- Handles complex UV structures\n- Processes vertex connections intelligently\n- Supports multi-object operations\n- Preserves relative vertex positions\n- Uses linear interpolation for precise alignment\n\n### Best Practices\n- Select clean, straight lines for best results\n- Ensure UV islands are properly unwrapped first\n- Limit selections to under 4000 vertices for performance\n- Use the cursor position to influence alignment direction\n\n[warning]Complex selections with many vertices may impact performance. For best results, work with smaller selections.[/warning]\n\n[note]This tool is particularly useful for creating seamless textures across multiple objects or aligning UV islands precisely.[/note]",
+            "keywords": ["uv", "alignment", "texturing", "edges", "mapping"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of UV Alignment Tool"
+                }
+            ]
+        },
+        {
+            "id": 306,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How does the Rigify Converter work?",
+            "answer": "The Rigify Converter transforms Rigify-generated armatures into Unity-compatible formats:\n\n### Conversion Process\n- Automatically detects Rigify armatures\n- Renames bones to Unity-compatible names\n- Restructures bone hierarchies\n- Removes unnecessary bones and controls\n- Preserves deformation capabilities\n\n### DEF Bones Handling\n- Moves DEF bones to correct positions\n- Establishes proper parent-child relationships\n- Handles special bone cases (pelvis, shoulder)\n- Creates transform copy constraints where needed\n\n### Twist Bones\n- Optional merging of twist bones\n- Preserves deformation quality\n- Maintains weight distributions\n- Optimizes bone count\n\n### Cleanup Operations\n- Removes bone collections\n- Standardizes armature naming\n- Cleans up constraints\n- Optimizes bone structure\n\n[warning]Converting a Rigify armature is a one-way process. Always make a backup of your original rig before conversion.[/warning]\n\n[note]This tool is essential for game engine compatibility, as Rigify's complex control system isn't supported in Unity and other game engines.[/note]",
+            "keywords": ["rigify", "unity", "conversion", "armature", "bones"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Rigify Converter"
+                }
+            ]
+        },
+        {
+            "id": 307,
+            "category": "Advanced Documentation",
+            "subcategory": "Tools Functions",
+            "question": "How does the Armature Standardization Tool work?",
+            "answer": "The Armature Standardization Tool helps convert non-standard armatures to meet Avatar Toolkit requirements:\n\n### Standardization Options\n- **Fix Bone Names**: Renames bones to match standard naming conventions\n- **Fix Hierarchy**: Corrects parent-child relationships between bones\n- **Fix Scale**: Normalizes bone lengths to prevent issues with too small or large bones\n\n### Bone Name Standardization\n- Identifies non-standard bone names\n- Maps them to standard equivalents\n- Handles special cases like spine/chest hierarchy\n- Preserves existing standard bones\n- Uses temporary naming to avoid conflicts\n\n### Hierarchy Correction\n- Fixes parent-child relationships\n- Establishes proper bone chains\n- Supports both standard and acceptable hierarchies\n- Maintains connections between bones\n\n### Scale Normalization\n- Calculates appropriate bone lengths\n- Identifies abnormally sized bones\n- Applies statistical analysis to determine proper scaling\n- Special handling for finger bones\n\n### Progress Tracking\n- Shows real-time standardization progress\n- Reports number of changes made\n- Provides detailed feedback on operations\n\n[warning]Standardizing an armature modifies its structure significantly. Always make a backup before proceeding.[/warning]\n\n[note]This tool is particularly useful for imported avatars from various sources that don't follow standard conventions.[/note]",
+            "keywords": ["standardize", "armature", "bones", "naming", "hierarchy", "scale"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of Armature Standardization Tool"
+                }
+            ]
+        }
+    ]
+}

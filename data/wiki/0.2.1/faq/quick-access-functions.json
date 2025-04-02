@@ -1,0 +1,87 @@
+{
+    "faqs": [
+        {
+            "id": 100,
+            "category": "Advanced Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the Armature Validation System work?",
+            "answer": "The armature validation system helps ensure your avatar's skeleton is properly set up for various platforms and features three validation modes:\n\n### Strict Mode\nProvides comprehensive validation including:\n- Checks for all essential bones (hips, spine, chest, neck, head)\n- Verifies correct bone hierarchy (e.g., spine properly connected to hips)\n- Ensures proper left/right bone symmetry\n- Validates bone naming conventions\n- Detects scale issues (bones that are too small or too large)\n- Identifies non-standard bones that may cause compatibility issues\n\n### Basic Mode\nPerforms essential checks:\n- Verifies presence of core bones\n- Basic structure validation\n- Allows more flexibility for non-standard avatars\n\n### No Validation\n- Bypasses all validation checks\n- Useful for experimental or non-humanoid avatars\n- Warning: May cause issues with some features\n\n### Problem Bone Highlighting\nVisually identifies problematic bones in the viewport (Enable in settings):\n- Different colors for different types of issues\n- Hierarchy issues shown in orange\n- Scale issues shown in yellow\n- Other problems shown in red\n\n[warning]Using No Validation mode may result in incompatibility with certain platforms or features not working as expected.[/warning]\n\n[note]The validation system supports multiple naming conventions and languages, making it compatible with avatars from various sources.[/note]",
+            "keywords": ["validation", "armature", "bones", "hierarchy", "skeleton", "highlighting"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added problem bone highlighting feature and scale issue detection"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of armature validation system"
+                }
+            ]
+        },
+        {
+            "id": 101,
+            "category": "Advanced Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How do the Pose Mode Functions work?",
+            "answer": "The pose mode system offers powerful tools for creating and managing poses:\n\n### Start/Stop Pose Mode\nWhen starting pose mode:\n- Automatically selects the armature\n- Enables bone manipulation\n- Preserves existing transformations\n\nWhen stopping pose mode:\n- Safely clears all pose adjustments\n- Returns bones to rest position\n- Preserves any saved poses\n\n### Creating Shape Keys from Poses\nThis powerful feature allows you to:\n- Convert any pose into a blendable shape key\n- Create multiple variations of the same pose\n- Combine poses with existing shape keys\n- Preserve vertex weights and deformations\n- Automatically validates meshes for compatibility\n- Provides progress tracking for complex operations\n\n### Applying Poses as Rest Position\nThis function permanently changes your avatar's default pose:\n- Updates the base skeleton position\n- Adjusts all connected meshes\n- Preserves shape keys and their deformations\n- Maintains proper weight painting\n- Includes validation to prevent issues\n- Shows progress for complex operations\n\n[warning]Applying a pose as rest position is permanent and cannot be undone after saving. Always make a backup before using this feature.[/warning]\n\n[note]Shape keys created from poses can be used for creating dynamic animations or blended expressions.[/note]",
+            "keywords": ["pose", "shape keys", "rest pose", "transformations", "animation"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added mesh validation and progress tracking for pose operations"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of pose mode functions"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "category": "Advanced Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the Import/Export System work?",
+            "answer": "The import/export system is designed to handle various avatar formats with specialized optimizations:\n\n### Import System\nSupports multiple formats with automatic optimization:\n\n**Standard Formats:**\n- FBX: Full support with automatic bone orientation\n- OBJ: Includes materials and textures\n- GLTF/GLB: GL Transmission Format/ GL Transmission Format Binary file \n- DAE (Collada): Supports auto-connect and chain finding\n- STL: Mesh import support\n- X3D/WRL: Web3D format support\n\n**Specialized Formats:**\n- SMD/DMX/QC: Source engine formats\n- VRM: VRM avatar format with specialized handling\n- VMD: MMD animation format\n- ANIMX: ANIMX animation format\n\n**Import Features:**\n- Automatic file type detection\n- Multi-file import support\n- Progress tracking for large imports\n- Automatic cleanup of default objects\n- Detailed error reporting\n\n### Export System\nOffers specialized export options through a dedicated menu:\n\n**FBX Export:**\n- Optimized for various platforms\n- Preserves all materials and textures\n- Maintains bone hierarchies\n- Includes shape keys and weights\n\n**Resonite Export:**\n- Specialized format for Resonite platform\n- Automatic material conversion\n- Optimized texture compression\n- Platform-specific optimizations\n\n[info]The system automatically handles texture conversion and compression during export to ensure compatibility.[/info]\n\n[warning]Some features may not transfer between all formats. Check platform requirements before exporting.[/warning]\n\n[note]For best results, use the recommended export format for your target platform.[/note]",
+            "keywords": ["import", "export", "formats", "conversion", "optimization", "vrm", "animx"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Added support for additional formats including ANIMX, VRM, and improved multi-file import"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2024-12-06",
+                    "changes": "Initial documentation of import/export system"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "category": "Advanced Documentation",
+            "subcategory": "Quick Access Functions",
+            "question": "How does the T-Pose Validation feature work?",
+            "answer": "The T-Pose Validation feature helps ensure your avatar is properly positioned in the standard T-pose, which is essential for many platforms and animation systems:\n\n### T-Pose Requirements\nThe validation checks for:\n- Arms positioned horizontally (perpendicular to the body)\n- Spine positioned vertically\n- Proper bone orientation throughout the skeleton\n\n### Validation Process\n1. The system identifies key bones including:\n   - Left and right upper arm bones\n   - Spine bones\n   - Other critical skeletal elements\n2. It analyzes the orientation of these bones\n3. It checks if the directions match expected T-pose values\n4. Results are displayed with detailed messages for any issues\n\n### Validation Results\nAfter validation, you'll see:\n- Success confirmation if the avatar is in a proper T-pose\n- Specific warnings for any issues detected\n- Detailed explanations of what needs to be corrected\n\n### Common Issues Detected\n- Left arm not horizontal\n- Right arm not horizontal\n- Spine not vertical\n- Improper bone rotations\n\n[warning]Many platforms require a proper T-pose for animations to work correctly. Incorrect poses can lead to animation issues.[/warning]\n\n[note]The T-pose validation works with various armature naming conventions and can detect proper positioning regardless of the specific bone names used.[/note]",
+            "keywords": ["t-pose", "validation", "armature", "pose", "animation"],
+            "version": "0.2.0",
+            "lastUpdated": "2025-03-25",
+            "history": [
+                {
+                    "version": "0.2.0",
+                    "date": "2025-03-25",
+                    "changes": "Initial documentation of T-Pose validation feature"
+                }
+            ]
+        }
+    ]
+}
